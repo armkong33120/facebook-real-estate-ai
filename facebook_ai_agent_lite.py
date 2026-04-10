@@ -1,44 +1,74 @@
 import os
-import time
-import json
-import urllib.request
-import io
-import functools
-import subprocess
 import re
+import time
+import io
+import json
+import subprocess
+import urllib.request
 from PIL import Image
 from playwright.sync_api import sync_playwright
-import google.generativeai as genai
 
-# บังคับให้ Console พิมพ์ออกมาทันที
-print = functools.partial(print, flush=True)
+# ลองพยายาม import google-generativeai
+try:
+    import google.generativeai as genai
+    HAS_GEMINI = True
+except ImportError:
+    HAS_GEMINI = False
 
-# --- CONFIG ---
-API_KEY = "AIzaSyDpGPdrSJWzZTIU3jmqEBkwNtHpwn_6a3w"
-genai.configure(api_key=API_KEY)
+# --- CONFIGURATION ---
+MAPPING_FILE = "uat_links.txt"
+BASE_RESULT_DIR = "Facebook_Property_Data"
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
-MAPPING_FILE = os.path.join(SCRIPT_DIR, "uat_links.txt")
-BASE_RESULT_DIR = os.path.join(SCRIPT_DIR, "Facebook_Property_Data")
+
+GEMINI_API_KEY = "AIzaSyC_zXvrs3siAvWzvebXwcV2GND3bx-g6Z8"
+if HAS_GEMINI:
+    genai.configure(api_key=GEMINI_API_KEY)
+    # ใช้รุ่นตามคำสั่งคุณกวงเป๊ะๆ (2.5-flash-lite)
+    model = genai.GenerativeModel('gemini-2.5-flash-lite')
 
 def analyze_location_with_ai(text):
-    """ส่งข้อความให้ AI วิเคราะห์ จังหวัด-เขต"""
-    print(f"   🤖 กำลังส่งข้อมูลให้ AI วิเคราะห์ทำเล...")
-    prompt = f"คุณคือผู้เชี่ยวชาญอสังหาฯ ไทย จงสกัดข้อมูล 'จังหวัด' และ 'เขต/อำเภอ' จากข้อความนี้ และตอบกลับเป็น JSON เท่านั้น: {{ 'province': '...', 'district': '...' }}\nข้อความ: {text}"
-    model = genai.GenerativeModel('gemini-2.5-flash-lite')
-    try:
-        response = model.generate_content(prompt, generation_config={"response_mime_type": "application/json"})
-        data = json.loads(response.text.strip())
-        return data.get("province", "ไม่ระบุ"), data.get("district", "ไม่ระบุ")
-    except:
+    if not HAS_GEMINI or not text:
         return "ไม่ระบุ", "ไม่ระบุ"
+    prompt = f"วิเคราะห์ 'จังหวัด' และ 'เขต/อำเภอ' จากข้อความนี้ และตอบเป็น JSON เท่านั้น: {{\"province\":\"...\", \"district\":\"...\"}}\n\nข้อความ:\n{text}"
+    try:
+        response = model.generate_content(prompt)
+        res_text = response.text.strip()
+        match = re.search(r'\{.*\}', res_text, re.DOTALL)
+        if match:
+            data = json.loads(match.group(0))
+            return data.get("province", "ไม่ระบุ"), data.get("district", "ไม่ระบุ")
+    except: pass
+    return "ไม่ระบุ", "ไม่ระบุ"
+
+def clean_property_text(text, ba):
+    """[V12.3 Deep Purge] ลบชื่อและเบอร์โทรเดิมออกแบบเนียนกริบ"""
+    text = re.sub(r'\d{2,3}[-\s]?\d{3,4}[-\s]?\d{3,4}', '', text)
+    kill_keywords = [
+        'ติดต่อสอบถามรายละเอียด', 'ติดต่อสอบถาม', 'สอบถามรายละเอียด', 'ทักแชท', 'ทัก Inbox',
+        'สนใจติดต่อ', 'ติดต่อได้ที่', 'รับเอเจ้น', 'Agent', 'Owner', 'เจ้าของโพสเอง', 
+        'รับAgent', 'รับโค้เบอร์', 'รับCo-agent', 'สอบถามเพิ่มเติม', 'นัดชมห้อง', 'แอดไลน์'
+    ]
+    lines = text.split('\n')
+    cleaned_lines = []
+    for line in lines:
+        s_line = line.strip()
+        if not s_line or any(k in s_line for k in kill_keywords): continue
+        line_no_names = re.sub(r'\(K\..*?\)', '', s_line)
+        line_no_names = re.sub(r'คุณ\s*[\u0E00-\u0E7F]+', '', line_no_names)
+        line_no_names = re.sub(r'\(.*?\)', '', line_no_names)
+        line_no_names = re.sub(r'[คะค่ะ]+\s*$', '', line_no_names.strip())
+        final_line = line_no_names.strip()
+        if final_line and len(final_line) > 1: cleaned_lines.append(final_line)
+    
+    signature = f"""\n━━━━━━━━━━━━━━━\n📞 Contact โทรศัพท์\n• 094-946-3652 (คุณกวง / Khun Kuang)\n• 094-242-6936 (คุณหนิง / Khun Ning)\n• 089-496-5451 (คุณพัด / Khun Pat)\n• 06-5090-7257 (Office)\n━━━━━━━━━━━━━━━\n💬 ช่องทางออนไลน์\n• WhatsApp : +66949463652\n• WeChat: kuanghuiagent\n• LINE: @benchamas_estate (with @)\n{ba}\n"""
+    return '\n'.join(cleaned_lines) + signature
 
 def get_fbid(url):
-    """สกัดเลข fbid จาก URL บน Address Bar"""
-    match = re.search(r'fbid=(\d+)', url)
-    return match.group(1) if match else url
+    match = re.search(r'fbid=(\d+)|permalink/(\d+)|posts/(\d+)', url)
+    if match: return next(g for g in match.groups() if g is not None)
+    return url
 
 def hash_tweak_save(img_data, save_path):
-    """V11.0: บันทึกรูปด้วยการปรับ Hash (Lossless)"""
     try:
         img = Image.open(io.BytesIO(img_data))
         img = img.convert("RGB")
@@ -51,61 +81,72 @@ def hash_tweak_save(img_data, save_path):
         return True
     except: return False
 
-def ultimate_ghost_agent_v11(page, url, ba):
-    """รันระบบ Ultimate V11.0: AI Scan -> Hierarchy Folder -> V10 Scraper"""
-    print(f"\n🚀 [ULTIMATE V11.0] เริ่มปฏิบัติการทรัพย์ {ba}...")
-    
+def ultimate_ghost_agent_v12(page, url, ba):
+    print(f"\n🚀 [GHOST V12.8] เริ่มปฏิบัติการทรัพย์ {ba}...")
     try:
-        # [1] Load & Scan Location
         page.goto(url, wait_until="load", timeout=90000)
-        page.wait_for_timeout(5000)
+        page.wait_for_timeout(8000)
         
-        # กวาดข้อความส่งให้ AI
-        print("   🔍 [AI PHASE] กำลังสแกนทำเลจากเนื้อหาโพสต์...")
-        raw_text = page.evaluate('() => document.body.innerText')
-        province, district = analyze_location_with_ai(raw_text[:2000])
-        print(f"       📍 พิกัดที่พบ: {province} / {district}")
+        # [1] ดึงเนื้อหาจาก Modal
+        print("   🔍 กำลังสกัดเนื้อหาจากหน้าต่างลอย (Modal Archer)...")
+        post_content = page.evaluate('''() => {
+            const dialog = document.querySelector('div[role="dialog"]');
+            if (dialog) {
+                const buttons = Array.from(dialog.querySelectorAll('div[role="button"]'));
+                const seeMore = buttons.find(b => b.innerText.includes('ดูเพิ่มเติม') || b.innerText.includes('See more'));
+                if (seeMore) seeMore.click();
+                const body = dialog.querySelector('div[dir="auto"]');
+                return body ? body.innerText : dialog.innerText;
+            }
+            return "";
+        }''')
         
-        # [2] Setup Folder Hierarchy
+        if not post_content:
+            post_content = page.evaluate('() => document.body.innerText')[:2000]
+
+        # [2] วิเคราะห์ทำเล + [3] ฟอกข้อมูล
+        province, district = analyze_location_with_ai(post_content[:2000])
+        final_info_text = clean_property_text(post_content, ba)
+        
+        # [4] บันทึกไฟล์
         target_dir = os.path.join(BASE_RESULT_DIR, province, district, ba)
         if not os.path.exists(target_dir): os.makedirs(target_dir)
-        
-        # [3] Navigation & Scroll (V10 Mode)
-        page.mouse.click(720, 380)
-        page.wait_for_timeout(2000)
-        for _ in range(3): page.keyboard.press("PageDown")
-        page.wait_for_timeout(5000)
-        
-        # [4] Open Lightbox
-        print("   🖼️ [SCRAPE PHASE] เริ่มปฏิบัติการดูดรูปภาพ (V10 Mode)...")
-        page.mouse.click(500, 350)
-        page.wait_for_timeout(5000)
+        with open(os.path.join(target_dir, "property_info.txt"), "w", encoding="utf-8") as f:
+            f.write(final_info_text)
+        print(f"       📍 พิกัด (AI 2.5): {province}/{district} | 📄 บันทึกข้อความสำเร็จ!")
+
+        # [5] Scrape รูปภาพ (V10.0 Classic Recovery)
+        print("   🖼️ [V10.0 CLASSIC] เริ่มปฏิบัติการกวาดรูปภาพ...")
+        page.evaluate('''() => {
+            const dialog = document.querySelector('div[role="dialog"]');
+            if (dialog) {
+                const img = dialog.querySelector('img');
+                if (img) img.click();
+            }
+        }''')
+        page.wait_for_timeout(6000)
         
         start_fbid = get_fbid(page.url)
+        print(f"       ✅ ล็อกเป้าหมายเริ่มต้น: {start_fbid}")
         all_ids = []
         
         for i in range(50):
             current_fbid = get_fbid(page.url)
             if i > 0 and current_fbid == start_fbid:
-                print(f"       🏁 จบภารกิจ! วนครบ {len(all_ids)} รูปถ้วน")
+                print(f"   🏁 จบภารกิจ! วนกลับมาที่เดิม ({len(all_ids)} รูป)")
                 break
                 
-            # ดึงรูปกึ่งกลางจอ
-            img_src = page.evaluate('''
-                () => {
-                    const el = document.elementFromPoint(720, 380);
-                    if (el && el.tagName === 'IMG') return el.src;
-                    const nested = el ? el.querySelector('img') : null;
-                    if (nested) return nested.src;
-                    const dialog = document.querySelector('div[role="dialog"]');
-                    const imgs = dialog ? Array.from(dialog.querySelectorAll('img')).filter(img => img.width > 400) : [];
-                    return imgs.length > 0 ? imgs[0].src : null;
-                }
-            ''')
+            img_src = page.evaluate('''() => {
+                const dialogs = Array.from(document.querySelectorAll('div[role="dialog"]'));
+                const target = dialogs.length > 1 ? dialogs[dialogs.length - 1] : dialogs[0];
+                if (!target) return null;
+                const imgs = Array.from(target.querySelectorAll('img')).filter(img => img.width > 400);
+                return imgs.length > 0 ? imgs[0].src : null;
+            }''')
             
             if img_src:
                 all_ids.append(current_fbid)
-                print(f"       📸 ใบที่ {len(all_ids)}: กำลังบันทึก ({current_fbid})")
+                print(f"       📸 ใบที่ {len(all_ids)}: เก็บเลข ID {current_fbid} สำเร็จ")
                 try:
                     req = urllib.request.Request(img_src, headers={'User-Agent': 'Mozilla/5.0'})
                     with urllib.request.urlopen(req, timeout=15) as resp:
@@ -113,16 +154,17 @@ def ultimate_ghost_agent_v11(page, url, ba):
                     hash_tweak_save(data, os.path.join(target_dir, f"property_{len(all_ids)}.jpg"))
                 except: pass
             
-            # กดถัดไป + Relay 5s
+            # คลิกถัดไป (Relay 7s เพื่อความเสถียรของรุ่น 2.5)
             next_btn = page.query_selector('div[aria-label="รูปภาพถัดไป"], div[aria-label="Next Photo"]')
             if next_btn: next_btn.click()
             else: page.keyboard.press("ArrowRight")
-            page.wait_for_timeout(5000)
+            page.wait_for_timeout(7000) 
+            
+            if get_fbid(page.url) == current_fbid and i < 49:
+                page.keyboard.press("ArrowRight")
+                page.wait_for_timeout(3000)
 
-        print(f"✅ สำเร็จ! ข้อมูลจัดเก็บไว้ที่: {province}/{district}/{ba}")
-
-    except Exception as e:
-        print(f"   ❌ Error: {str(e)}")
+    except Exception as e: print(f"   ❌ Error: {str(e)}")
 
 def main():
     if not os.path.exists(MAPPING_FILE): return
@@ -130,30 +172,24 @@ def main():
     with open(MAPPING_FILE, 'r', encoding='utf-8') as f:
         for line in f:
             if "|" in line:
-                ba, url = line.split("|")
-                mapping[ba.strip()] = url.strip()
-                break
-
-    print(f"🕵️ [GHOST AGENT V11.0] The Ultimate Unified Agent Ready...")
+                p = line.split("|")
+                mapping[p[0].strip()] = p[1].strip()
     
     with sync_playwright() as p:
         user_data_dir = os.path.join(SCRIPT_DIR, "fb_bot_profile")
-        context = p.chromium.launch_persistent_context(
-            user_data_dir, headless=False, no_viewport=True,
-            user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
-        )
+        context = p.chromium.launch_persistent_context(user_data_dir, headless=False, no_viewport=True)
         page = context.pages[0] if context.pages else context.new_page()
-
-        print("\n💡 กด [Enter] เพื่อเริ่มงาน V11.0 Ultimate (Location + Scraper)...")
-        input() 
-
+        print("\n💡 กด [Enter] เพื่อเริ่ม Full Pipeline (AI 2.5 + V10 Image)...")
+        print(f"\n🚀 เริ่มปฏิบัติการดูดทรัพย์ทั้งหมด {len(mapping)} ลิงก์...")
         for ba, url in mapping.items():
-            ultimate_ghost_agent_v11(page, url, ba)
+            try:
+                ultimate_ghost_agent_v12(page, url, ba)
+            except Exception as e:
+                print(f"❌ ข้ามทรัพย์ {ba} เนื่องจากเกิดข้อผิดพลาด: {str(e)}")
         
-        print("\n📂 เปิดโฟลเดอร์ผลลัพธ์เพื่อตรวจสอบความถูกต้อง...")
+        print("\n🏆 จบภารกิจกวาดทรัพย์ทุกรายรายการ! กำลังเปิดโฟลเดอร์ผลลัพธ์...")
         subprocess.run(["open", BASE_RESULT_DIR])
         time.sleep(5)
         context.close()
 
-if __name__ == "__main__":
-    main()
+if __name__ == "__main__": main()
