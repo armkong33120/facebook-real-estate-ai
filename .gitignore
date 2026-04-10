@@ -1,0 +1,7 @@
+.DS_Store
+fb_bot_profile/
+ฐานข้อมูลอสังหา_Facebook/
+node_modules/
+.next/
+dist/
+build/
