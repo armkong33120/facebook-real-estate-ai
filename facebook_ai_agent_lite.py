@@ -29,7 +29,16 @@ if HAS_GEMINI:
 def analyze_location_with_ai(text):
     if not HAS_GEMINI or not text:
         return "ไม่ระบุ", "ไม่ระบุ"
-    prompt = f"วิเคราะห์ 'จังหวัด' และ 'เขต/อำเภอ' จากข้อความนี้ และตอบเป็น JSON เท่านั้น: {{\"province\":\"...\", \"district\":\"...\"}}\n\nข้อความ:\n{text}"
+    # Prompt ระดับ Expert: สั่งให้ AI ตรวจสอบพิกัดเหมือน Google Maps Expert
+    prompt = f"""
+    ในฐานะผู้เชี่ยวชาญ Google Maps และพิกัดอสังหาริมทรัพย์ในไทย:
+    1. ตรวจสอบชื่อคอนโด/โครงการ และลิงก์ Google Maps (ถ้ามี) ในข้อความนี้
+    2. ระบุ 'จังหวัด' และ 'เขต/อำเภอ' ที่ถูกต้องตามเขตการปกครองจริง (Official District)
+    3. ตอบเป็น JSON เท่านั้น: {{"province":"...", "district":"..."}}
+    
+    ข้อความ:
+    {text}
+    """
     try:
         response = model.generate_content(prompt)
         res_text = response.text.strip()
