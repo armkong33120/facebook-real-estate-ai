@@ -14,7 +14,8 @@ import google.generativeai as genai
 print = functools.partial(print, flush=True)
 
 # --- CONFIG ---
-API_KEY = "AIzaSyDFS6Kd2RGhY8JMJkpMJsflZJP5xfjzV0g"
+# --- CONFIG ---
+API_KEY = "AIzaSyDpGPdrSJWzZTIU3jmqEBkwNtHpwn_6a3w"
 genai.configure(api_key=API_KEY)
 
 # ตั้งค่าไดเรกทอรี
@@ -24,7 +25,7 @@ BASE_TARGET_DIR = os.path.join(SCRIPT_DIR, "ฐานข้อมูลอสั
 
 def extract_category_with_vision(text, image_paths=None):
     prompt = f"วิเคราะห์อสังหาฯ และตอบเป็น JSON เท่านั้น:\n{text}\nรูปแบบ: {{\"province\": \"...\", \"district\": \"...\", \"property_type\": \"...\", \"cleaned_text\": \"...\"}}"
-    model = genai.GenerativeModel('gemini-1.5-flash')
+    model = genai.GenerativeModel('gemini-2.5-flash-lite')
     content = [prompt]
     if image_paths:
         for p in image_paths[:3]:
