@@ -71,16 +71,22 @@ def main():
     print(f"🚀 เริ่มระบบกู้คืนชุดเสถียร (จำนวน {len(mapping)} รายการ) - [LITE VERSION]")
     
     with sync_playwright() as p:
-        browser = p.chromium.launch(headless=False)
-        page = browser.new_page()
+        # ใช้ User Data Dir เพื่อให้ไม่ต้อง Log in ใหม่ (ลดโอกาสโดน Check point)
+        user_data_dir = os.path.join(SCRIPT_DIR, "fb_bot_profile")
+        context = p.chromium.launch_persistent_context(
+            user_data_dir, 
+            headless=False,
+            no_viewport=True # ให้ Browser ปรับขนาดตามหน้าจอจริง
+        )
+        page = context.pages[0] if context.pages else context.new_page()
 
         print("\n" + "="*50)
-        print("🛑 [PAUSE] กรุณาจัดการ Log in ในหน้าจอ Browser ให้เรียบร้อย")
+        print("💡 [INFO] กำลังใช้โปรไฟล์จากโฟลเดอร์ fb_bot_profile")
+        print("หากระบบยังไม่ได้ Login กรุณาทำให้เรียบร้อยในหน้าจอ Browser")
         print("เมื่อพร้อมแล้ว ให้กลับมาที่หน้านี้ (Terminal) แล้วกด [Enter] เพื่อเริ่มรัน...")
         print("="*50)
         input() 
-
-        for ba, url in mapping.items():
+Line 83:         for ba, url in mapping.items():
             print(f"\nProcessing {ba}: {url}")
             try:
                 m_url = url.replace("www.facebook.com", "m.facebook.com").replace("mbasic.facebook.com", "m.facebook.com")
