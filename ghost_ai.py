@@ -1,12 +1,11 @@
 import json
 import re
-import google.generativeai as genai
+from google import genai
 from ghost_config import GEMINI_API_KEY, MODEL_NAME
 
-# Setup Gemini
+# Setup Gemini (New GenAI SDK V13.80)
 try:
-    genai.configure(api_key=GEMINI_API_KEY)
-    model = genai.GenerativeModel(MODEL_NAME)
+    client = genai.Client(api_key=GEMINI_API_KEY)
     HAS_AI = True
 except Exception as e:
     print(f"⚠️ Warning: Gemini Configuration Failed: {e}")
@@ -65,7 +64,10 @@ def analyze_location_with_ai(text):
     """
     
     try:
-        response = model.generate_content(prompt)
+        response = client.models.generate_content(
+            model=MODEL_NAME,
+            contents=prompt
+        )
         res_text = response.text.strip()
         
         # Regex extraction for robustness
@@ -93,12 +95,16 @@ def verify_api_connectivity():
         
     try:
         # ส่งข้อความทดสอบสั้นๆ เพื่อเช็คสิทธิ์ (Auth Check)
-        test_response = model.generate_content("Ping")
+        test_response = client.models.generate_content(
+            model=MODEL_NAME,
+            contents="Ping"
+        )
         if test_response.text:
             return True, "AI Online & API Key Valid ✅"
     except Exception as e:
-        if "403" in str(e):
+        emsg = str(e)
+        if "403" in emsg or "permission_denied" in emsg.lower():
             return False, "API Key โดนแบน (Leaked/Expired). กรุณาเปลี่ยน Key ใน ghost_config.py ❌"
-        return False, f"API Connection Error: {str(e)} ❌"
+        return False, f"API Connection Error: {emsg} ❌"
     
     return False, "Unknown AI Connectivity Issue ❌"

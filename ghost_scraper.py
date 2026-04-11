@@ -1,5 +1,6 @@
 import os
 import re
+import random
 import urllib.request
 from ghost_config import IMAGE_RELAY_TIME, RETRY_RELAY_TIME, BASE_RESULT_DIR, MIN_IMAGES_REQUIRED
 from ghost_ai import analyze_location_with_ai
@@ -12,42 +13,65 @@ def ghost_modal_archer(page):
     ทำหน้าที่: เจาะทะลวงหน้าต่างลอย Facebook เพื่อดูดเนื้อหาโพสต์
     """
     return page.evaluate('''() => {
-        const dialog = document.querySelector('div[role="dialog"]');
-        if (dialog) {
+        // [AGENT BRAIN V13.65] ค้นหาเฉพาะ Dialog ที่น่าจะเป็นเนื้อหาอสังหาจริงๆ
+        const dialogs = Array.from(document.querySelectorAll('div[role="dialog"]'));
+        
+        // กรองหา Dialog ที่ 'กว้าง' พอจะเป็นเนื้อหาโพสต์ (เมินแจ้งเตือนที่มักจะแคบ)
+        const contentDialog = dialogs.find(d => {
+            const rect = d.getBoundingClientRect();
+            const isWide = rect.width > 450;
+            const isNotNotification = !d.innerText.includes('การแจ้งเตือน') && !d.innerText.includes('Notifications');
+            return isWide && isNotNotification;
+        }) || dialogs[0]; // Fallback ไปตัวแรกถ้าหาไม่เจอ
+
+        if (contentDialog) {
             // คลิก 'ดูเพิ่มเติม' หากมี
-            const buttons = Array.from(dialog.querySelectorAll('div[role="button"]'));
+            const buttons = Array.from(contentDialog.querySelectorAll('div[role="button"]'));
             const seeMore = buttons.find(b => b.innerText.includes('ดูเพิ่มเติม') || b.innerText.includes('See more'));
             if (seeMore) seeMore.click();
             
-            const body = dialog.querySelector('div[dir="auto"]');
-            return body ? body.innerText : dialog.innerText;
+            // พยายามหา div dir="auto" ใน Dialog นี้
+            const body = contentDialog.querySelector('div[dir="auto"]');
+            return body ? body.innerText : contentDialog.innerText;
         }
         return "";
     }''')
 
+def ghost_human_wait(page, base_ms):
+    """[AGENT BRAIN: Stealth Wait] สุ่มเวลาช่วง 80% - 130% ของเวลาหลัก"""
+    jitter_factor = random.uniform(0.8, 1.3)
+    wait_time = int(base_ms * jitter_factor)
+    page.wait_for_timeout(wait_time)
+
+def ghost_human_click(page, x, y):
+    """[AGENT BRAIN: Stealth Click] คลิกแบบสุ่มระยะ 3-5 พิกเซลรอบเป้าหมาย"""
+    jx = x + random.randint(-4, 4)
+    jy = y + random.randint(-4, 4)
+    page.mouse.click(jx, jy)
+
 def open_lightbox(page):
     """
     [HUMAN-HAND V10 MODE] กู้ร่างพิกัด Macbook แท้ที่คุณกวงจูนไว้
-    ทำหน้าที่: คลิกและเลื่อนตามพิกัดเป๊ะๆ เพื่อเปิด Lightbox
+    ทำหน้าที่: คลิกและเลื่อนตามพิกัดเป๊ะๆ เพื่อเปิด Lightbox (V13.70 แฝงร่างมนุษย์)
     """
     print("      🎯 [HAND-MODE] เริ่มล็อกพิกัดตามขนาดจอ Macbook (Human-Hand)...")
     try:
-        # 1. คลิกกลางจอแบบรัวเพื่อ Focus (Triple-Click 720, 380)
+        # 1. คลิกกลางจอแบบรัวเพื่อ Focus (Triple-Click 720, 380) พร้อม Jitter
         print("      🎯 [AGENT BRAIN] กำลังรัวคลิกกลางจอกระตุ้น Focus (720, 380)...")
         for _ in range(3):
-            page.mouse.click(720, 380)
-            page.wait_for_timeout(500)
-        page.wait_for_timeout(2000)
+            ghost_human_click(page, 720, 380)
+            ghost_human_wait(page, 500)
+        ghost_human_wait(page, 2000)
         
         # 2. [AGENT BRAIN] รูดสกอร์บาร์ด้วยระบบ Smart Wheel (Hardware Simulation)
         print("      🔄 [SMART WHEEL] กำลังรูดสกอร์บาร์ลงด้านล่างให้สุดเพื่อโหลดรูปภาพ...")
         page.mouse.wheel(0, 5000)
-        page.wait_for_timeout(5000)
+        ghost_human_wait(page, 5000)
         
-        # 3. คลิกเปิด Lightbox ที่พิกัดเป๊ะๆ (500, 350)
+        # 3. คลิกเปิด Lightbox ที่พิกัดเป๊ะๆ (500, 350) พร้อม Jitter
         print("      🖱️  คลิกที่พิกัด 500, 350 เพื่อเปิดแกลเลอรี่...")
-        page.mouse.click(500, 350)
-        page.wait_for_timeout(5000)
+        ghost_human_click(page, 500, 350)
+        ghost_human_wait(page, 5000)
         return True
     except Exception as e:
         print(f"      ⚠️ Hand-Mode Error: {e}")
@@ -146,7 +170,7 @@ def run_ghost_pipeline(page, url, ba):
             else:
                 page.keyboard.press("ArrowRight")
                 
-            page.wait_for_timeout(5000) 
+            ghost_human_wait(page, 5000) 
 
         # [!] ตรวจสอบความถูกต้องขั้นสุดท้าย
         actual_images = [f for f in os.listdir(target_dir) if f.endswith(".jpg")]

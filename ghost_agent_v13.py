@@ -78,7 +78,7 @@ def main():
     last_ba = checkpoint.get("last_ba") if checkpoint else None
 
     print("\n════════════════════════════════════════════════")
-    print("🕵️  GHOST AGENT V13.50 (INTERACTIVE MODE)")
+    print("🕵️  GHOST AGENT V13.80 (GENAI MODERN MIGRATION)")
     if checkpoint:
         print(f"🔄 พบประวัติการทำงานค้างอยู่ที่: {last_ba}")
         print("   [1] รันต่อจากจุดเดิม (Resume)")
