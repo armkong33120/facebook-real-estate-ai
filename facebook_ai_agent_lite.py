@@ -20,7 +20,7 @@ MAPPING_FILE = "uat_links.txt"
 BASE_RESULT_DIR = "Facebook_Property_Data"
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 
-GEMINI_API_KEY = "AIzaSyC_zXvrs3siAvWzvebXwcV2GND3bx-g6Z8"
+GEMINI_API_KEY = "AIzaSyAFAdJZBTICZGAdDW-YljnOgcE2B1hFvXk" # <--- วาง API Key ใหม่ตรงนี้ด้วยตัวเองครับ
 if HAS_GEMINI:
     genai.configure(api_key=GEMINI_API_KEY)
     # ใช้รุ่นตามคำสั่งคุณกวงเป๊ะๆ (2.5-flash-lite)
@@ -42,11 +42,15 @@ def analyze_location_with_ai(text):
     try:
         response = model.generate_content(prompt)
         res_text = response.text.strip()
+        print(f"      DEBUG [AI Raw]: {res_text}") # ส่องดูคำตอบดิบ
         match = re.search(r'\{.*\}', res_text, re.DOTALL)
         if match:
             data = json.loads(match.group(0))
             return data.get("province", "ไม่ระบุ"), data.get("district", "ไม่ระบุ")
-    except: pass
+        else:
+            print("      DEBUG: ไม่พบรูปแบบ JSON ในคำตอบ AI")
+    except Exception as e: 
+        print(f"      DEBUG: AI Error - {str(e)}")
     return "ไม่ระบุ", "ไม่ระบุ"
 
 def clean_property_text(text, ba):
@@ -163,15 +167,19 @@ def ultimate_ghost_agent_v12(page, url, ba):
                     hash_tweak_save(data, os.path.join(target_dir, f"property_{len(all_ids)}.jpg"))
                 except: pass
             
-            # คลิกถัดไป (Relay 7s เพื่อความเสถียรของรุ่น 2.5)
+            # คลิกถัดไป (Relay 6s-8s เพื่อความเสถียร)
             next_btn = page.query_selector('div[aria-label="รูปภาพถัดไป"], div[aria-label="Next Photo"]')
-            if next_btn: next_btn.click()
-            else: page.keyboard.press("ArrowRight")
-            page.wait_for_timeout(7000) 
-            
-            if get_fbid(page.url) == current_fbid and i < 49:
+            if next_btn: 
+                next_btn.click()
+            else: 
                 page.keyboard.press("ArrowRight")
-                page.wait_for_timeout(3000)
+            
+            page.wait_for_timeout(6000) 
+            
+            # ตรวจสอบว่ารูปเปลี่ยนจริงไหม ถ้าไม่เปลี่ยนให้ซ้ำด้วย ArrowRight
+            if get_fbid(page.url) == current_fbid:
+                page.keyboard.press("ArrowRight")
+                page.wait_for_timeout(4000)
 
     except Exception as e: print(f"   ❌ Error: {str(e)}")
 

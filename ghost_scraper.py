@@ -51,8 +51,8 @@ def ghost_human_click(page, x, y):
 
 def open_lightbox(page):
     """
-    [HUMAN-HAND V10 MODE] กู้ร่างพิกัด Macbook แท้ที่คุณกวงจูนไว้
-    ทำหน้าที่: คลิกและเลื่อนตามพิกัดเป๊ะๆ เพื่อเปิด Lightbox (V13.70 แฝงร่างมนุษย์)
+    [HUMAN-HAND V10 MODE] กู้ร่างพิกัด Macbook แท้ของคุณกวงจูนไว้
+    ทำหน้าที่: คลิกและเลื่อนตามพิกัดเป๊ะๆ เพื่อเปิด Lightbox (V15.00 Structural Mode)
     """
     print("      🎯 [HAND-MODE] เริ่มล็อกพิกัดตามขนาดจอ Macbook (Human-Hand)...")
     try:
@@ -68,11 +68,32 @@ def open_lightbox(page):
         page.mouse.wheel(0, 5000)
         ghost_human_wait(page, 5000)
         
-        # 3. คลิกเปิด Lightbox ที่พิกัดเป๊ะๆ (500, 350) พร้อม Jitter
-        print("      🖱️  คลิกที่พิกัด 500, 350 เพื่อเปิดแกลเลอรี่...")
-        ghost_human_click(page, 500, 350)
-        ghost_human_wait(page, 5000)
-        return True
+        # 3. คลิกเปิด Lightbox (พิกัดเป้าหมาย 500, 350) พร้อมระบบสแกนหาแบบความละเอียดสูง (V14.10)
+        base_y = 350
+        # สแกนพิกัดขยับ "ขึ้นด้านบน" เท่านั้น ตามที่คุณกวงสั่งกำชับ (Upward Only)
+        offsets = [0, -50, -100, -150, -200, -250, -300] 
+        
+        for offset in offsets:
+            target_y = base_y + offset
+            if target_y < 50: continue # ไม่กดสูงเกินไปจนโดน Toolbar
+            if offset != 0:
+                print(f"      🔍 [HUNT: Gallery] ลองขยับพิกัดแนวตั้ง: {offset}px (Target Y: {target_y})")
+            
+            ghost_human_click(page, 500, target_y)
+            ghost_human_wait(page, 3000) # รอสั้นๆ เพื่อเช็คว่าเปิดหรือยัง
+            
+            # เช็คว่า Lightbox เปิดหรือยัง (หา div role="dialog")
+            is_opened = page.query_selector('div[role="dialog"]')
+            if is_opened:
+                if offset != 0:
+                    print(f"      ✅ [HUNT SUCCESS] เจอแกลเลอรี่ที่ Offset {offset}px!")
+                else:
+                    print("      🖱️  คลิกที่พิกัด 500, 350 เพื่อเปิดแกลเลอรี่... (สำเร็จ)")
+                ghost_human_wait(page, 3000)
+                return True
+        
+        print("      ⚠️ [HUNT FAILED] สแกนหาจุดเปิดแกลเลอรี่ไม่สำเร็จ...")
+        return False
     except Exception as e:
         print(f"      ⚠️ Hand-Mode Error: {e}")
         return False
@@ -118,29 +139,53 @@ def run_ghost_pipeline(page, url, ba):
         opened = open_lightbox(page)
         
         harvested_hashes = set() # เก็บลายนิ้วมือรูปเพื่อเช็คความคืบหน้า
+        consecutive_empty_hits = 0 # ตัวนับความล้มเหลวต่อเนื่อง (V13.90)
         
         for i in range(50):
-            # 4.1 ดึงลิ้งก์รูปจาก "กึ่งกลางจอ"
+            # 4.1 ดึงลิ้งก์รูปจาก "โครงสร้างแกลเลอรี่" โดยตรง (V15.00 Structural Search)
+            # เราจะไม่ใช้แค่พิกัดคลิก แต่จะใช้การสแกนหา Object ที่เป็นรูปทรัพย์จริงๆ
             img_src = page.evaluate('''() => {
-                const el = document.elementFromPoint(720, 380);
-                if (!el) return null;
-                if (el.tagName === 'IMG') return el.src;
-                const nestedImg = el.querySelector('img');
-                if (nestedImg) return nestedImg.src;
-                
-                // Fallback: หากึ่งกลางไม่ได้จริงๆ ให้เอารูปที่ใหญ่ที่สุดใน Dialog
                 const dialog = document.querySelector('div[role="dialog"]');
-                if (dialog) {
-                    const imgs = Array.from(dialog.querySelectorAll('img')).filter(img => img.width > 400);
-                    return imgs.length > 0 ? imgs[0].src : null;
-                }
-                return null;
+                if (!dialog) return null;
+
+                // 1. ค้นหารูปภาพทั้งหมดใน Dialog
+                const imgs = Array.from(dialog.querySelectorAll('img'));
+                if (imgs.length === 0) return null;
+
+                // 2. กรองเฉพาะรูปที่มีขนาดใหญ่พอจะเป็นรูปทรัพย์ (ตัด icon/pixel ทิ้ง)
+                const validImgs = imgs.filter(img => {
+                    const rect = img.getBoundingClientRect();
+                    return rect.width > 200 && rect.height > 200 && !img.src.includes('static.xx.fbcdn.net');
+                });
+
+                if (validImgs.length === 0) return null;
+
+                // 3. เลือกรูปที่ "อยู่กึ่งกลางที่สุด" หรือ "ใหญ่ที่สุด"
+                // ลอจิก: เลือกรูปที่มีพื้นที่ (Area) มากที่สุด
+                validImgs.sort((a, b) => (b.width * b.height) - (a.width * a.height));
+                const bestImg = validImgs[0];
+
+                return JSON.stringify({
+                    src: bestImg.src,
+                    width: bestImg.width,
+                    height: bestImg.height
+                });
             }''')
 
+            final_src = None
             if img_src:
                 try:
+                    res_data = json.loads(img_src)
+                    final_src = res_data.get('src')
+                    if i == 0:
+                        print(f"       ✅ พบภาพโครงสร้างความละเอียด: {res_data.get('width')}x{res_data.get('height')}")
+                except:
+                    final_src = None
+
+            if final_src:
+                try:
                     # โหลดข้อมูลรูปภาพดิบเพื่อเอามาทำ Hash
-                    req = urllib.request.Request(img_src, headers={'User-Agent': 'Mozilla/5.0'})
+                    req = urllib.request.Request(final_src, headers={'User-Agent': 'Mozilla/5.0'})
                     with urllib.request.urlopen(req, timeout=15) as resp:
                         img_data = resp.read()
                     
@@ -157,20 +202,25 @@ def run_ghost_pipeline(page, url, ba):
                     hash_tweak_save(img_data, os.path.join(target_dir, f"property_{img_index}.jpg"))
                     
                     harvested_hashes.add(current_hash)
+                    consecutive_empty_hits = 0 # รีเซ็ตเมื่อเจอรูปสำเร็จ
                     
                 except Exception as e:
                     print(f"       ⚠️ พลาดการประมวลผลรูปที่ {len(harvested_hashes)+1}: {e}")
             else:
-                print(f"       ⚠️ ใบที่ {i+1}: มองไม่เห็นรูปที่จุดกึ่งกลาง...")
+                consecutive_empty_hits += 1
+                print(f"       ⚠️ ใบที่ {i+1}: มองไม่เห็นรูปที่จุดกึ่งกลาง... (ต่อเนื่องครั้งที่ {consecutive_empty_hits})")
+                
+                if consecutive_empty_hits >= 5:
+                    raise RuntimeError("VISIBILITY_LOSS")
 
-            # 4.2 เลื่อนถัดไป (Agent Relay 5s เพื่อความเสถียร)
+            # 4.2 เลื่อนถัดไป (Agent Relay 7s เพื่อความเสถียรสูงสุด - V15.00)
             next_btn = page.query_selector('div[aria-label="รูปภาพถัดไป"], div[aria-label="Next Photo"]')
             if next_btn:
                 next_btn.click()
             else:
                 page.keyboard.press("ArrowRight")
                 
-            ghost_human_wait(page, 5000) 
+            ghost_human_wait(page, 7000) 
 
         # [!] ตรวจสอบความถูกต้องขั้นสุดท้าย
         actual_images = [f for f in os.listdir(target_dir) if f.endswith(".jpg")]

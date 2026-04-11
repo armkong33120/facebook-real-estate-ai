@@ -2000,6 +2000,4 @@ BM415 | https://www.facebook.com/share/p/1E5rMDEo6y/
 BM416 | https://www.facebook.com/share/p/1EbzM9rB5x/
 BM417 | https://www.facebook.com/share/p/1FYwycsLfq/
 BM418 | https://www.facebook.com/share/p/18G23rYfT6/
-BM8 | https://m.facebook.com/story.php?story_fbid=pfbid0N44XtXdHuNDycQMs2cX1cB1huCrmrJ34xoAmNbM8ReZLSjEzUZ1NWVc8oQ9D6c5Pl&id=100089866411089
-BM9 | https://web.facebook.com/share/p/1b4eBM9XFr/
-ฺBA 7778 | https://www.facebook.com/share/p/1CbWcuZTiz/
+

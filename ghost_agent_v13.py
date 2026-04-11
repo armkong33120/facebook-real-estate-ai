@@ -44,6 +44,11 @@ def clear_checkpoint():
     if os.path.exists(config.CHECKPOINT_FILE):
         os.remove(config.CHECKPOINT_FILE)
 
+def log_failed_harvest(ba, url):
+    """[V13.90] บันทึกรายชื่อทรัพย์ที่ข้ามไปเพื่อรันซ้ำภายหลัง"""
+    with open("failed_harvests.txt", "a", encoding="utf-8") as f:
+        f.write(f"{ba} | {url}\n")
+
 def load_mapping():
     """โหลดรายการลิงก์จาก uat_links.txt"""
     if not os.path.exists(config.MAPPING_FILE):
@@ -78,7 +83,7 @@ def main():
     last_ba = checkpoint.get("last_ba") if checkpoint else None
 
     print("\n════════════════════════════════════════════════")
-    print("🕵️  GHOST AGENT V13.80 (GENAI MODERN MIGRATION)")
+    print("🕵️  GHOST AGENT V15.00 (VISUAL STRUCTURE RESTORATION)")
     if checkpoint:
         print(f"🔄 พบประวัติการทำงานค้างอยู่ที่: {last_ba}")
         print("   [1] รันต่อจากจุดเดิม (Resume)")
@@ -107,9 +112,10 @@ def main():
         print(f"⏩ โหมดกู้คืนงาน: เตรียมกระโดดไปเริ่มต่อจาก {last_ba}...")
         skip_mode = True
         
-    print(f"🚀 เตรียมปฏิบัติการกวาดทรัพย์ทั้งหมด {len(mapping)} รายการ")
+    print(f"🚀 เตรียมปฏิบัติการกวาดทรัพย์ทั้งหมด {len(mapping)} รายการ (V13.85 Queue Insight)")
     print("════════════════════════════════════════════════")
     
+    total_items = len(mapping)
     with sync_playwright() as p:
         # เปิด Browser พร้อม Profile เดิม (ไม่ต้อง Login ใหม่)
         context = p.chromium.launch_persistent_context(
@@ -121,7 +127,7 @@ def main():
         page = context.pages[0] if context.pages else context.new_page()
 
         ghost_log("=== เริ่มต้นปฏิบัติการรอบใหม่ ===")
-        for ba, url in mapping.items():
+        for idx, (ba, url) in enumerate(mapping.items(), 1):
             # ตรรกะกระโดดข้ามตัวที่ทำเสร็จแล้ว
             if skip_mode:
                 if ba == last_ba:
@@ -130,22 +136,33 @@ def main():
                 continue
 
             try:
+                print(f"\n📊 [ภารกิจลำดับที่: {idx} / {total_items}]")
                 run_ghost_pipeline(page, url, ba)
                 save_checkpoint(ba) # บันทึกความสำเร็จรายตัว
                 ghost_log(f"✅ สำเร็จ: ทรัพย์ {ba} ({url})")
             except RuntimeError as e:
-                # กรณี Error รุนแรง (ไฟล์พัง/รูปหาย) ให้หยุดรันทั้งหมดทันที
-                error_msg = f"🛑 หยุดปฏิบัติการฉุกเฉิน (CRITICAL STOP): {str(e)}"
-                print(f"\n{error_msg}")
-                ghost_log(error_msg)
-                print(f"⚠️ บันทึกจุดค้างงานไว้ที่: {ba}")
-                # หมายเหตุ: เราไม่ save_checkpoint ตัวที่พาร์ค เพราะมันไม่สำเร็จ
-                break # หยุดรันคิวที่เหลือทั้งหมด
+                emsg = str(e)
+                # เช็คว่าเป็น Error ที่ควร 'ข้ามและจด' หรือควร 'หยุดรัน'
+                if "VISIBILITY_LOSS" in emsg or "รูปภาพไม่ครบถ้วน" in emsg:
+                    error_msg = f"⚠️ [SKIP] ข้ามทรัพย์ {ba} เนื่องจาก: {emsg}"
+                    print(error_msg)
+                    ghost_log(error_msg)
+                    log_failed_harvest(ba, url) # [New V13.90] จดลงสมุดจดงานเสีย
+                    save_checkpoint(ba) # บันทึกว่าข้ามไปแล้ว เพื่อให้รอบหน้าไม่ทำซ้ำ
+                    continue # ทำตัวถัดไปต่อเลย
+                else:
+                    # กรณี Error รุนแรงอื่น (Browser ล่ม/พิกัดพัง) ให้หยุดรันทั้งหมด
+                    error_msg = f"🛑 หยุดปฏิบัติการฉุกเฉิน (SYSTEM CRITICAL): {emsg}"
+                    print(f"\n{error_msg}")
+                    ghost_log(error_msg)
+                    break 
             except Exception as e:
                 # กรณี Error ทั่วไป ให้ข้ามไปทำทรัพย์ถัดไป
                 error_msg = f"❌ ข้ามทรัพย์ {ba} (General Error): {str(e)}"
                 print(error_msg)
                 ghost_log(error_msg)
+                log_failed_harvest(ba, url)
+                continue
         
         # หากรันจบ loop โดยไม่มีการ break (แสดงว่าสำเร็จครบทุกตัว)
         else:
