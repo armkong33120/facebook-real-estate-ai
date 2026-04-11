@@ -9,3 +9,7 @@ config.json
 .next/
 dist/
 build/
+Facebook_Property_Data/
+temp_*/
+ghost_history.log
+Facebook_Property_Data/
