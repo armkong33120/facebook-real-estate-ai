@@ -13,3 +13,13 @@ Facebook_Property_Data/
 temp_*/
 ghost_history.log
 Facebook_Property_Data/
+
+one_shot_vision.png
+vision_map.png
+*.log
+failed_links.txt
+checkpoint.txt
+monitor_run_save_*/
+test_gallery/
+test_post_capture.png
+fb_check.png
