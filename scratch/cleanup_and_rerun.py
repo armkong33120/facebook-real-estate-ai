@@ -1,9 +1,9 @@
 import os
 import shutil
 
-base_path = "/Users/pattharawadee/Desktop/Facebook_Property_Data"
-links_file = "/Users/pattharawadee/Desktop/untitled folder/uat_links.txt"
-rerun_file = "/Users/pattharawadee/Desktop/untitled folder/rerun_links.txt"
+base_path = "/Users/your_username/Desktop/Facebook_Property_Data"
+links_file = "/Users/your_username/Desktop/untitled folder/uat_links.txt"
+rerun_file = "/Users/your_username/Desktop/untitled folder/rerun_links.txt"
 
 failed_ids = []
 

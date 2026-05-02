@@ -4,7 +4,7 @@ import time
 import config
 
 # Path ของ Google Chrome for Testing บนเครื่องคุณ
-CHROME_BINARY = "/Users/pattharawadee/Library/Caches/ms-playwright/chromium-1208/chrome-mac-arm64/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing"
+CHROME_BINARY = "/Users/your_username/Library/Caches/ms-playwright/chromium-1208/chrome-mac-arm64/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing"
 
 def kill_existing_chrome():
     """สั่งปิด Google Chrome for Testing และกระบวนการที่ค้างอยู่ที่ Port 9222"""
@@ -12,9 +12,9 @@ def kill_existing_chrome():
     try:
         # ปิด Chrome ทุกตัวที่ชื่อ "Google Chrome for Testing"
         subprocess.run(["pkill", "-f", "Google Chrome for Testing"], stderr=subprocess.DEVNULL)
-        # ปิดอะไรก็ตามที่ใช้ Port 9222
-        subprocess.run("lsof -ti:9222 | xargs kill -9", shell=True, stderr=subprocess.DEVNULL)
-        time.sleep(3) # รอให้ระบบคืนค่าพอร์ต (กิจกรรม 3 วิ)
+        # หมายเหตุ: เราจะไม่ kill port 9222 เพราะอาจจะกวนการทำงานของ IDE (Antigravity)
+        # เราจะใช้ Port 9292 แทนในการทำงาน
+        time.sleep(3) 
     except:
         pass
 
@@ -29,11 +29,16 @@ def launch_independent_browser(url="about:blank"):
     cmd = [
         CHROME_BINARY,
         f"--user-data-dir={config.USER_DATA_DIR}",
-        "--remote-debugging-port=9222",
+        "--remote-debugging-port=9292",
         "--remote-allow-origins=*",
         "--no-first-run",
         "--no-default-browser-check",
         "--disable-blink-features=AutomationControlled",
+        "--disable-infobars",
+        "--disable-notifications",
+        "--disable-popup-blocking",
+        "--disable-dev-shm-usage",
+        "--no-sandbox",
         f"--window-size={config.VIEWPORT_WIDTH},{config.VIEWPORT_HEIGHT}",
         "--start-maximized",
         url

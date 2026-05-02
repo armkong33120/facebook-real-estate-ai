@@ -1,6 +1,6 @@
 import os
 
-base_path = "/Users/pattharawadee/Desktop/Facebook_Property_Data"
+base_path = "/Users/your_username/Desktop/Facebook_Property_Data"
 start_id = 8515
 end_id = 8735
 found_count = 0

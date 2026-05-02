@@ -1,8 +1,8 @@
 import os
 
-BASE_PATH = "/Users/pattharawadee/Desktop/Facebook_Property_Data"
-LINKS_FILE = "/Users/pattharawadee/Desktop/untitled folder/uat_links.txt"
-RERUN_FILE = "/Users/pattharawadee/Desktop/untitled folder/rerun_links.txt"
+BASE_PATH = "/Users/your_username/Desktop/Facebook_Property_Data"
+LINKS_FILE = "/Users/your_username/Desktop/untitled folder/uat_links.txt"
+RERUN_FILE = "/Users/your_username/Desktop/untitled folder/rerun_links.txt"
 CHECKPOINT = "BA 8735"
 
 def recovery_cleanup():

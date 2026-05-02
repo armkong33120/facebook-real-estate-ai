@@ -1,0 +1,928 @@
+=== Facebook Group Categorization Report (By District) ===
+Generated at: 2026-04-30 14:10:29
+============================================================
+
+📍 เขต/โซน: ทั่วไป (ดึงจากเฟสหลัก)
+------------------------------
+  [✓] เข้าสำเร็จ/ส่งคำขอแล้ว (740):
+      - https://www.facebook.com/groups/852974273450200 (Joined)
+      - https://www.facebook.com/groups/254196423062713 (Joined)
+      - https://www.facebook.com/groups/1691516944981196 (Joined)
+      - https://www.facebook.com/groups/820542253469438 (Joined)
+      - https://www.facebook.com/groups/920773112763682 (Joined)
+      - https://www.facebook.com/groups/390674283644251 (Joined)
+      - https://www.facebook.com/groups/659189892798179 (Joined)
+      - https://www.facebook.com/groups/1120196945203129 (Joined)
+      - https://www.facebook.com/groups/475996423572254 (Joined)
+      - https://www.facebook.com/groups/241957405014467 (Joined)
+      - https://www.facebook.com/groups/911602560128766 (Joined)
+      - https://www.facebook.com/groups/439761115477967 (Joined)
+      - https://www.facebook.com/groups/2267225016801266 (Joined)
+      - https://www.facebook.com/groups/237180325208564 (Joined)
+      - https://www.facebook.com/groups/1256175568604177 (Joined)
+      - https://www.facebook.com/groups/299669732398889 (Joined)
+      - https://www.facebook.com/groups/1621650422030188 (Joined)
+      - https://www.facebook.com/groups/5477260102316895 (Joined)
+      - https://www.facebook.com/groups/423027865453580 (Joined)
+      - https://www.facebook.com/groups/1297834700845467 (Joined)
+      - https://www.facebook.com/groups/2938030469660796 (Joined)
+      - https://www.facebook.com/groups/651364893130944 (Joined)
+      - https://www.facebook.com/groups/1132424831437014 (Joined)
+      - https://www.facebook.com/groups/713187560989161 (Joined)
+      - https://www.facebook.com/groups/346814301041540 (Joined)
+      - https://www.facebook.com/groups/204478981997430 (Joined)
+      - https://www.facebook.com/groups/1133892651741296 (Joined)
+      - https://www.facebook.com/groups/871429607282047 (Joined)
+      - https://www.facebook.com/groups/1290038629500202 (Joined)
+      - https://www.facebook.com/groups/1226306344632101 (Joined)
+      - https://www.facebook.com/groups/152666115270963 (Joined)
+      - https://www.facebook.com/groups/833012228762891 (Joined)
+      - https://www.facebook.com/groups/381742803710940 (Joined)
+      - https://www.facebook.com/groups/683994886615488 (Joined)
+      - https://www.facebook.com/groups/527772646211646 (Joined)
+      - https://www.facebook.com/groups/471506581277652 (Joined)
+      - https://www.facebook.com/groups/644176053748280 (Joined)
+      - https://www.facebook.com/groups/2092624524888914 (Joined)
+      - https://www.facebook.com/groups/985502843398742 (Joined)
+      - https://www.facebook.com/groups/1505031453353198 (Joined)
+      - https://www.facebook.com/groups/133385312750679 (Joined)
+      - https://www.facebook.com/groups/1183987626474053 (Joined)
+      - https://www.facebook.com/groups/443308771533356 (Joined)
+      - https://www.facebook.com/groups/531636698192310 (Joined)
+      - https://www.facebook.com/groups/8049127508471447 (Joined)
+      - https://www.facebook.com/groups/290794271562610 (Joined)
+      - https://www.facebook.com/groups/3153992601533473 (Joined)
+      - https://www.facebook.com/groups/953439065689897 (Joined)
+      - https://www.facebook.com/groups/1128955944725352 (Joined)
+      - https://www.facebook.com/groups/363861999959717 (Joined)
+      - https://www.facebook.com/groups/945932130012276 (Joined)
+      - https://www.facebook.com/groups/3755398288075761 (Joined)
+      - https://www.facebook.com/groups/511797739572705 (Joined)
+      - https://www.facebook.com/groups/3156078641293721 (Joined)
+      - https://www.facebook.com/groups/1018373913105660 (Joined)
+      - https://www.facebook.com/groups/1822497657941339 (Joined)
+      - https://www.facebook.com/groups/709261687392538 (Joined)
+      - https://www.facebook.com/groups/1604997993577111 (Joined)
+      - https://www.facebook.com/groups/652132130403920 (Joined)
+      - https://www.facebook.com/groups/446223210075418 (Joined)
+      - https://www.facebook.com/groups/2555641084645629 (Joined)
+      - https://www.facebook.com/groups/999064125526025 (Joined)
+      - https://www.facebook.com/groups/3562162187436637 (Joined)
+      - https://www.facebook.com/groups/1739682136662610 (Joined)
+      - https://www.facebook.com/groups/629267146874528 (Joined)
+      - https://www.facebook.com/groups/949090100359209 (Joined)
+      - https://www.facebook.com/groups/641339021278253 (Joined)
+      - https://www.facebook.com/groups/1381495712630529 (Joined)
+      - https://www.facebook.com/groups/794527305797057 (Joined)
+      - https://www.facebook.com/groups/812723620253110 (Joined)
+      - https://www.facebook.com/groups/497839675959086 (Joined)
+      - https://www.facebook.com/groups/887643139838861 (Joined)
+      - https://www.facebook.com/groups/396766974650324 (Joined)
+      - https://www.facebook.com/groups/1434693950477853 (Joined)
+      - https://www.facebook.com/groups/1441937012540569 (Joined)
+      - https://www.facebook.com/groups/4777309785826764 (Joined)
+      - https://www.facebook.com/groups/257615289264444 (Joined)
+      - https://www.facebook.com/groups/870769904632070 (Joined)
+      - https://www.facebook.com/groups/1243005762878602 (Requested)
+      - https://www.facebook.com/groups/pheonixpropertycu (Requested)
+      - https://www.facebook.com/groups/1131479790640124 (Requested)
+      - https://www.facebook.com/groups/3584522728452983 (Requested)
+      - https://www.facebook.com/groups/2742308549301675 (Requested)
+      - https://www.facebook.com/groups/1635505510669706 (Requested)
+      - https://www.facebook.com/groups/706336984323885 (Requested)
+      - https://www.facebook.com/groups/876489136180625 (Requested)
+      - https://www.facebook.com/groups/755386227300867 (Requested)
+      - https://www.facebook.com/groups/764714311924623 (Requested)
+      - https://www.facebook.com/groups/489984848651504 (Requested)
+      - https://www.facebook.com/groups/3044641415773383 (Requested)
+      - https://www.facebook.com/groups/1620105474843137 (Requested)
+      - https://www.facebook.com/groups/400656425698852 (Requested)
+      - https://www.facebook.com/groups/3621907797938842 (Requested)
+      - https://www.facebook.com/groups/947014130099175 (Requested)
+      - https://www.facebook.com/groups/lifeasokehyperama9 (Requested)
+      - https://www.facebook.com/groups/condo.zone1 (Requested)
+      - https://www.facebook.com/groups/467218037102318 (Requested)
+      - https://www.facebook.com/groups/2272954049565016 (Requested)
+      - https://www.facebook.com/groups/452572136448752 (Requested)
+      - https://www.facebook.com/groups/1575714826156182 (Requested)
+      - https://www.facebook.com/groups/607603000495879 (Requested)
+      - https://www.facebook.com/groups/1449896895701888 (Requested)
+      - https://www.facebook.com/groups/1875923669523840 (Requested)
+      - https://www.facebook.com/groups/1032324032405597 (Requested)
+      - https://www.facebook.com/groups/539867204922931 (Requested)
+      - https://www.facebook.com/groups/2054570658255484 (Requested)
+      - https://www.facebook.com/groups/1195894495151980 (Requested)
+      - https://www.facebook.com/groups/405568155284957 (Requested)
+      - https://www.facebook.com/groups/964329225390105 (Requested)
+      - https://www.facebook.com/groups/220184556435675 (Requested)
+      - https://www.facebook.com/groups/425138663764930 (Requested)
+      - https://www.facebook.com/groups/1242084383894585 (Requested)
+      - https://www.facebook.com/groups/1299130424196188 (Requested)
+      - https://www.facebook.com/groups/434879551620891 (Requested)
+      - https://www.facebook.com/groups/142822594268180 (Requested)
+      - https://www.facebook.com/groups/427606108870419 (Requested)
+      - https://www.facebook.com/groups/1548533565620761 (Requested)
+      - https://www.facebook.com/groups/1130808774455680 (Requested)
+      - https://www.facebook.com/groups/224700072534973 (Requested)
+      - https://www.facebook.com/groups/692312452744435 (Requested)
+      - https://www.facebook.com/groups/1747960965677961 (Requested)
+      - https://www.facebook.com/groups/1194830308685466 (Requested)
+      - https://www.facebook.com/groups/250752349758872 (Requested)
+      - https://www.facebook.com/groups/1121603208814731 (Requested)
+      - https://www.facebook.com/groups/bangkokcondo.zone3 (Requested)
+      - https://www.facebook.com/groups/1482649712528917 (Requested)
+      - https://www.facebook.com/groups/164749053377751 (Requested)
+      - https://www.facebook.com/groups/641809376323040 (Requested)
+      - https://www.facebook.com/groups/315960123543562 (Requested)
+      - https://www.facebook.com/groups/5406748286107887 (Requested)
+      - https://www.facebook.com/groups/432283252004273 (Requested)
+      - https://www.facebook.com/groups/278858040745427 (Requested)
+      - https://www.facebook.com/groups/116597008938327 (Requested)
+      - https://www.facebook.com/groups/2033215880182299 (Requested)
+      - https://www.facebook.com/groups/858565322706175 (Requested)
+      - https://www.facebook.com/groups/1107182510216204 (Requested)
+      - https://www.facebook.com/groups/1097754710781994 (Requested)
+      - https://www.facebook.com/groups/3102539220067881 (Requested)
+      - https://www.facebook.com/groups/condo.p (Requested)
+      - https://www.facebook.com/groups/667925535837236 (Requested)
+      - https://www.facebook.com/groups/1250116202018097 (Requested)
+      - https://www.facebook.com/groups/174635590974549 (Requested)
+      - https://www.facebook.com/groups/189031759618436 (Requested)
+      - https://www.facebook.com/groups/921438355777317 (Requested)
+      - https://www.facebook.com/groups/671476334862492 (Requested)
+      - https://www.facebook.com/groups/676562980761366 (Requested)
+      - https://www.facebook.com/groups/2895939283825279 (Requested)
+      - https://www.facebook.com/groups/722522119987021 (Requested)
+      - https://www.facebook.com/groups/145560120811506 (Requested)
+      - https://www.facebook.com/groups/1020588476492144 (Requested)
+      - https://www.facebook.com/groups/1348215259203657 (Requested)
+      - https://www.facebook.com/groups/433277392639983 (Requested)
+      - https://www.facebook.com/groups/665070171555305 (Requested)
+      - https://www.facebook.com/groups/878191080497746 (Requested)
+      - https://www.facebook.com/groups/1252695951997872 (Requested)
+      - https://www.facebook.com/groups/260489819101804 (Requested)
+      - https://www.facebook.com/groups/313416994701074 (Requested)
+      - https://www.facebook.com/groups/3146711752314475 (Requested)
+      - https://www.facebook.com/groups/366219672715545 (Requested)
+      - https://www.facebook.com/groups/1511391409416996 (Requested)
+      - https://www.facebook.com/groups/961828088585742 (Requested)
+      - https://www.facebook.com/groups/963148785669968 (Requested)
+      - https://www.facebook.com/groups/498989587648750 (Requested)
+      - https://www.facebook.com/groups/704730006528237 (Requested)
+      - https://www.facebook.com/groups/727400185517948 (Requested)
+      - https://www.facebook.com/groups/381475698884152 (Requested)
+      - https://www.facebook.com/groups/1312417733029369 (Requested)
+      - https://www.facebook.com/groups/1189254528285704 (Requested)
+      - https://www.facebook.com/groups/1589787234437250 (Requested)
+      - https://www.facebook.com/groups/1145300685492972 (Requested)
+      - https://www.facebook.com/groups/1535981783809194 (Requested)
+      - https://www.facebook.com/groups/7627500844006370 (Requested)
+      - https://www.facebook.com/groups/359121629543600 (Requested)
+      - https://www.facebook.com/groups/898591335707963 (Requested)
+      - https://www.facebook.com/groups/6338232116293959 (Requested)
+      - https://www.facebook.com/groups/451132869900454 (Requested)
+      - https://www.facebook.com/groups/rama3rama4sathorn (Requested)
+      - https://www.facebook.com/groups/987446753005570 (Requested)
+      - https://www.facebook.com/groups/2008486542722047 (Requested)
+      - https://www.facebook.com/groups/459289590192632 (Requested)
+      - https://www.facebook.com/groups/224730229106358 (Requested)
+      - https://www.facebook.com/groups/3668238986792481 (Requested)
+      - https://www.facebook.com/groups/1057287578298073 (Requested)
+      - https://www.facebook.com/groups/2639986962954097 (Requested)
+      - https://www.facebook.com/groups/7263456073687565 (Requested)
+      - https://www.facebook.com/groups/1096361430918265 (Requested)
+      - https://www.facebook.com/groups/897634994703631 (Requested)
+      - https://www.facebook.com/groups/1084101105065815 (Requested)
+      - https://www.facebook.com/groups/3353879391558035 (Requested)
+      - https://www.facebook.com/groups/homecondoforsaleandrent (Requested)
+      - https://www.facebook.com/groups/1865117593909172 (Requested)
+      - https://www.facebook.com/groups/1517072382230034 (Requested)
+      - https://www.facebook.com/groups/1094930515399990 (Requested)
+      - https://www.facebook.com/groups/4564612930240358 (Requested)
+      - https://www.facebook.com/groups/muangthaongthanicondo (Requested)
+      - https://www.facebook.com/groups/1336988570234701 (Requested)
+      - https://www.facebook.com/groups/3655328801449912 (Requested)
+      - https://www.facebook.com/groups/583890529898214 (Requested)
+      - https://www.facebook.com/groups/2744398079176033 (Requested)
+      - https://www.facebook.com/groups/1334645000230841 (Requested)
+      - https://www.facebook.com/groups/1528007508414190 (Requested)
+      - https://www.facebook.com/groups/881976592214940 (Requested)
+      - https://www.facebook.com/groups/388174771051168 (Requested)
+      - https://www.facebook.com/groups/1223023132338373 (Requested)
+      - https://www.facebook.com/groups/875036034128072 (Requested)
+      - https://www.facebook.com/groups/155839749865199 (Requested)
+      - https://www.facebook.com/groups/1781082028899196 (Requested)
+      - https://www.facebook.com/groups/821215928519228 (Requested)
+      - https://www.facebook.com/groups/1234825814426798 (Requested)
+      - https://www.facebook.com/groups/633423055134338 (Requested)
+      - https://www.facebook.com/groups/1221834001907756 (Requested)
+      - https://www.facebook.com/groups/705574467128429 (Requested)
+      - https://www.facebook.com/groups/354531633985258 (Requested)
+      - https://www.facebook.com/groups/699658280806913 (Requested)
+      - https://www.facebook.com/groups/1512417666154461 (Requested)
+      - https://www.facebook.com/groups/445029594572516 (Requested)
+      - https://www.facebook.com/groups/369423310772173 (Requested)
+      - https://www.facebook.com/groups/453654920441657 (Requested)
+      - https://www.facebook.com/groups/7597371590307438 (Requested)
+      - https://www.facebook.com/groups/1505919936626097 (Requested)
+      - https://www.facebook.com/groups/1597975407826751 (Requested)
+      - https://www.facebook.com/groups/295675026594910 (Requested)
+      - https://www.facebook.com/groups/184075664642325 (Requested)
+      - https://www.facebook.com/groups/215834189583740 (Requested)
+      - https://www.facebook.com/groups/1413521793377984 (Requested)
+      - https://www.facebook.com/groups/312557027013114 (Requested)
+      - https://www.facebook.com/groups/kasetsartcondo (Requested)
+      - https://www.facebook.com/groups/246815130683721 (Requested)
+      - https://www.facebook.com/groups/1595703720814099 (Requested)
+      - https://www.facebook.com/groups/696634168700875 (Requested)
+      - https://www.facebook.com/groups/972060847493892 (Requested)
+      - https://www.facebook.com/groups/682825765656026 (Requested)
+      - https://www.facebook.com/groups/1012069656372240 (Requested)
+      - https://www.facebook.com/groups/1697362563887505 (Requested)
+      - https://www.facebook.com/groups/675862510732967 (Requested)
+      - https://www.facebook.com/groups/1889771661539871 (Requested)
+      - https://www.facebook.com/groups/903669201764857 (Requested)
+      - https://www.facebook.com/groups/1239877384357965 (Requested)
+      - https://www.facebook.com/groups/772648653353561 (Requested)
+      - https://www.facebook.com/groups/303285154148356 (Requested)
+      - https://www.facebook.com/groups/bangkokcondo.zone4 (Requested)
+      - https://www.facebook.com/groups/172589828367454 (Requested)
+      - https://www.facebook.com/groups/1605932606705036 (Requested)
+      - https://www.facebook.com/groups/25071745995745682 (Requested)
+      - https://www.facebook.com/groups/1756620921730060 (Requested)
+      - https://www.facebook.com/groups/792030289756655 (Requested)
+      - https://www.facebook.com/groups/856394368337881 (Requested)
+      - https://www.facebook.com/groups/768102625277745 (Requested)
+      - https://www.facebook.com/groups/1144388806170706 (Requested)
+      - https://www.facebook.com/groups/1103568590165142 (Requested)
+      - https://www.facebook.com/groups/309929177295166 (Requested)
+      - https://www.facebook.com/groups/892819715569734 (Requested)
+      - https://www.facebook.com/groups/2786676858315302 (Requested)
+      - https://www.facebook.com/groups/764121980965084 (Requested)
+      - https://www.facebook.com/groups/1711332686411516 (Requested)
+      - https://www.facebook.com/groups/8690279424391682 (Requested)
+      - https://www.facebook.com/groups/1666070283868037 (Requested)
+      - https://www.facebook.com/groups/3107115449509046 (Requested)
+      - https://www.facebook.com/groups/1265022227254690 (Requested)
+      - https://www.facebook.com/groups/429552948632013 (Requested)
+      - https://www.facebook.com/groups/541099694207646 (Requested)
+      - https://www.facebook.com/groups/236425361788537 (Requested)
+      - https://www.facebook.com/groups/1935632020554554 (Requested)
+      - https://www.facebook.com/groups/510947550950431 (Requested)
+      - https://www.facebook.com/groups/3892580900989766 (Requested)
+      - https://www.facebook.com/groups/584685916033859 (Requested)
+      - https://www.facebook.com/groups/1033114782221165 (Requested)
+      - https://www.facebook.com/groups/1064982484581165 (Requested)
+      - https://www.facebook.com/groups/931917668680808 (Requested)
+      - https://www.facebook.com/groups/1936142850174130 (Requested)
+      - https://www.facebook.com/groups/1369224260407956 (Requested)
+      - https://www.facebook.com/groups/4393345167418928 (Requested)
+      - https://www.facebook.com/groups/homedonmuang (Requested)
+      - https://www.facebook.com/groups/493952660984028 (Requested)
+      - https://www.facebook.com/groups/1402974630225115 (Requested)
+      - https://www.facebook.com/groups/171200134526699 (Requested)
+      - https://www.facebook.com/groups/953439262947305 (Requested)
+      - https://www.facebook.com/groups/428698739662148 (Requested)
+      - https://www.facebook.com/groups/1911746739068110 (Requested)
+      - https://www.facebook.com/groups/2272802019643339 (Requested)
+      - https://www.facebook.com/groups/3747653605353001 (Requested)
+      - https://www.facebook.com/groups/786705512263657 (Requested)
+      - https://www.facebook.com/groups/1633666097233464 (Requested)
+      - https://www.facebook.com/groups/1447652612005024 (Requested)
+      - https://www.facebook.com/groups/506874547331360 (Requested)
+      - https://www.facebook.com/groups/698348860535511 (Requested)
+      - https://www.facebook.com/groups/1928344730848556 (Requested)
+      - https://www.facebook.com/groups/621150782444680 (Requested)
+      - https://www.facebook.com/groups/844798347616729 (Requested)
+      - https://www.facebook.com/groups/745051277078228 (Requested)
+      - https://www.facebook.com/groups/2924868721102323 (Requested)
+      - https://www.facebook.com/groups/438021498169320 (Requested)
+      - https://www.facebook.com/groups/624331191766174 (Requested)
+      - https://www.facebook.com/groups/1113379863415617 (Requested)
+      - https://www.facebook.com/groups/728088888526056 (Requested)
+      - https://www.facebook.com/groups/1723722948072313 (Requested)
+      - https://www.facebook.com/groups/412872754232887 (Requested)
+      - https://www.facebook.com/groups/381430606101853 (Requested)
+      - https://www.facebook.com/groups/526999539862386 (Requested)
+      - https://www.facebook.com/groups/569845461292170 (Requested)
+      - https://www.facebook.com/groups/3620604501552774 (Requested)
+      - https://www.facebook.com/groups/915684622386204 (Requested)
+      - https://www.facebook.com/groups/1303483613683217 (Requested)
+      - https://www.facebook.com/groups/1274488640642866 (Requested)
+      - https://www.facebook.com/groups/1856122774889201 (Requested)
+      - https://www.facebook.com/groups/1824270718025897 (Requested)
+      - https://www.facebook.com/groups/579495477185389 (Requested)
+      - https://www.facebook.com/groups/948199323429630 (Requested)
+      - https://www.facebook.com/groups/746122573799174 (Requested)
+      - https://www.facebook.com/groups/296751202290095 (Requested)
+      - https://www.facebook.com/groups/2899463347041403 (Requested)
+      - https://www.facebook.com/groups/840489634800214 (Requested)
+      - https://www.facebook.com/groups/1261613313990469 (Requested)
+      - https://www.facebook.com/groups/543373221750999 (Requested)
+      - https://www.facebook.com/groups/636391668545600 (Requested)
+      - https://www.facebook.com/groups/176633257654992 (Requested)
+      - https://www.facebook.com/groups/310364601005577 (Requested)
+      - https://www.facebook.com/groups/519346030556100 (Requested)
+      - https://www.facebook.com/groups/2055718704816039 (Requested)
+      - https://www.facebook.com/groups/665474996475560 (Requested)
+      - https://www.facebook.com/groups/555038736352641 (Requested)
+      - https://www.facebook.com/groups/578679814954310 (Requested)
+      - https://www.facebook.com/groups/1019805802638333 (Requested)
+      - https://www.facebook.com/groups/1604917036544635 (Requested)
+      - https://www.facebook.com/groups/253687517405415 (Requested)
+      - https://www.facebook.com/groups/983009596465878 (Requested)
+      - https://www.facebook.com/groups/1049883576023575 (Requested)
+      - https://www.facebook.com/groups/630292627508887 (Requested)
+      - https://www.facebook.com/groups/340611486058589 (Requested)
+      - https://www.facebook.com/groups/802489701558734 (Requested)
+      - https://www.facebook.com/groups/1164681474958218 (Requested)
+      - https://www.facebook.com/groups/1279148466101418 (Requested)
+      - https://www.facebook.com/groups/8065929470113322 (Requested)
+      - https://www.facebook.com/groups/790081599955387 (Requested)
+      - https://www.facebook.com/groups/921802689324279 (Requested)
+      - https://www.facebook.com/groups/809747490943908 (Requested)
+      - https://www.facebook.com/groups/1553101588772405 (Requested)
+      - https://www.facebook.com/groups/1679069615774973 (Requested)
+      - https://www.facebook.com/groups/596825657737206 (Requested)
+      - https://www.facebook.com/groups/1838587319807700 (Requested)
+      - https://www.facebook.com/groups/797652371325014 (Requested)
+      - https://www.facebook.com/groups/774251672326380 (Requested)
+      - https://www.facebook.com/groups/1679077569169261 (Requested)
+      - https://www.facebook.com/groups/237493983301104 (Requested)
+      - https://www.facebook.com/groups/525501589983506 (Requested)
+      - https://www.facebook.com/groups/983519566861233 (Requested)
+      - https://www.facebook.com/groups/1117975192847404 (Requested)
+      - https://www.facebook.com/groups/3702309799798295 (Requested)
+      - https://www.facebook.com/groups/1745833819240299 (Requested)
+      - https://www.facebook.com/groups/489307949275454 (Requested)
+      - https://www.facebook.com/groups/979535213097008 (Requested)
+      - https://www.facebook.com/groups/555075304073146 (Requested)
+      - https://www.facebook.com/groups/1077999665647494 (Requested)
+      - https://www.facebook.com/groups/692217018143534 (Requested)
+      - https://www.facebook.com/groups/realestate.bkk (Requested)
+      - https://www.facebook.com/groups/748660972512033 (Requested)
+      - https://www.facebook.com/groups/1048957453038848 (Requested)
+      - https://www.facebook.com/groups/pheonixpropertyku (Requested)
+      - https://www.facebook.com/groups/224427780293431 (Requested)
+      - https://www.facebook.com/groups/163326257495081 (Requested)
+      - https://www.facebook.com/groups/1398076004204844 (Requested)
+      - https://www.facebook.com/groups/condoladprao (Requested)
+      - https://www.facebook.com/groups/112488858596389 (Requested)
+      - https://www.facebook.com/groups/745688680523200 (Requested)
+      - https://www.facebook.com/groups/3286381871678927 (Requested)
+      - https://www.facebook.com/groups/1791106641485893 (Requested)
+      - https://www.facebook.com/groups/2798542033610328 (Requested)
+      - https://www.facebook.com/groups/3135560439856474 (Requested)
+      - https://www.facebook.com/groups/518063164097316 (Requested)
+      - https://www.facebook.com/groups/3972522996099940 (Requested)
+      - https://www.facebook.com/groups/483041674502472 (Requested)
+      - https://www.facebook.com/groups/962992498722985 (Requested)
+      - https://www.facebook.com/groups/880452875999582 (Requested)
+      - https://www.facebook.com/groups/3648955245334357 (Requested)
+      - https://www.facebook.com/groups/162873490134778 (Requested)
+      - https://www.facebook.com/groups/500584177194156 (Requested)
+      - https://www.facebook.com/groups/1190844632557058 (Requested)
+      - https://www.facebook.com/groups/395294282563380 (Requested)
+      - https://www.facebook.com/groups/1465690614454628 (Requested)
+      - https://www.facebook.com/groups/271612284177793 (Requested)
+      - https://www.facebook.com/groups/636343015580330 (Requested)
+      - https://www.facebook.com/groups/1508224369299979 (Requested)
+      - https://www.facebook.com/groups/870059873439762 (Requested)
+      - https://www.facebook.com/groups/905617216712871 (Requested)
+      - https://www.facebook.com/groups/1731472840436365 (Requested)
+      - https://www.facebook.com/groups/1403973213276708 (Requested)
+      - https://www.facebook.com/groups/1609168892920766 (Requested)
+      - https://www.facebook.com/groups/307070700755476 (Requested)
+      - https://www.facebook.com/groups/sathornsilomrama3condocenter (Requested)
+      - https://www.facebook.com/groups/260961588297171 (Requested)
+      - https://www.facebook.com/groups/1427076414162371 (Requested)
+      - https://www.facebook.com/groups/1921520938677449 (Requested)
+      - https://www.facebook.com/groups/736009000369717 (Requested)
+      - https://www.facebook.com/groups/2475897422459494 (Requested)
+      - https://www.facebook.com/groups/563748305572769 (Requested)
+      - https://www.facebook.com/groups/1312457346277827 (Requested)
+      - https://www.facebook.com/groups/422956238991402 (Requested)
+      - https://www.facebook.com/groups/805845858197426 (Requested)
+      - https://www.facebook.com/groups/731296317606415 (Requested)
+      - https://www.facebook.com/groups/551681400401071 (Requested)
+      - https://www.facebook.com/groups/575304639967244 (Requested)
+      - https://www.facebook.com/groups/4672206652863424 (Requested)
+      - https://www.facebook.com/groups/rama2baanchao (Requested)
+      - https://www.facebook.com/groups/1963382590717193 (Requested)
+      - https://www.facebook.com/groups/612118103722064 (Requested)
+      - https://www.facebook.com/groups/3340191966311112 (Requested)
+      - https://www.facebook.com/groups/827476971746415 (Requested)
+      - https://www.facebook.com/groups/1352807692136474 (Requested)
+      - https://www.facebook.com/groups/798497248149447 (Requested)
+      - https://www.facebook.com/groups/343010498100703 (Requested)
+      - https://www.facebook.com/groups/100551916756219 (Requested)
+      - https://www.facebook.com/groups/1119767975050447 (Requested)
+      - https://www.facebook.com/groups/916945229046566 (Requested)
+      - https://www.facebook.com/groups/360199360842007 (Requested)
+      - https://www.facebook.com/groups/1038847363902874 (Requested)
+      - https://www.facebook.com/groups/116612638951020 (Requested)
+      - https://www.facebook.com/groups/718186845923096 (Requested)
+      - https://www.facebook.com/groups/820345776884110 (Requested)
+      - https://www.facebook.com/groups/748441383501258 (Requested)
+      - https://www.facebook.com/groups/355675070973973 (Requested)
+      - https://www.facebook.com/groups/360639508893447 (Requested)
+      - https://www.facebook.com/groups/367771601354232 (Requested)
+      - https://www.facebook.com/groups/1042398696482055 (Requested)
+      - https://www.facebook.com/groups/2627610534038796 (Requested)
+      - https://www.facebook.com/groups/1093329418325871 (Requested)
+      - https://www.facebook.com/groups/bkksmile (Requested)
+      - https://www.facebook.com/groups/332798611835777 (Requested)
+      - https://www.facebook.com/groups/971888629619654 (Requested)
+      - https://www.facebook.com/groups/702937023617112 (Requested)
+      - https://www.facebook.com/groups/130092265677659 (Requested)
+      - https://www.facebook.com/groups/1202174166860409 (Requested)
+      - https://www.facebook.com/groups/680489632468885 (Requested)
+      - https://www.facebook.com/groups/1192821072057945 (Requested)
+      - https://www.facebook.com/groups/2934705793512328 (Requested)
+      - https://www.facebook.com/groups/226681229770730 (Requested)
+      - https://www.facebook.com/groups/2949518398684164 (Requested)
+      - https://www.facebook.com/groups/305809240219006 (Requested)
+      - https://www.facebook.com/groups/2001941260072025 (Requested)
+      - https://www.facebook.com/groups/2090098571226788 (Requested)
+      - https://www.facebook.com/groups/1954106731643341 (Requested)
+      - https://www.facebook.com/groups/258515753348994 (Requested)
+      - https://www.facebook.com/groups/1121863464613478 (Requested)
+      - https://www.facebook.com/groups/1908581546122412 (Requested)
+      - https://www.facebook.com/groups/529020221621517 (Requested)
+      - https://www.facebook.com/groups/1773980363333942 (Requested)
+      - https://www.facebook.com/groups/1571998213067410 (Requested)
+      - https://www.facebook.com/groups/1560713614298904 (Requested)
+      - https://www.facebook.com/groups/1818017401691955 (Requested)
+      - https://www.facebook.com/groups/817310586032893 (Requested)
+      - https://www.facebook.com/groups/570276373309601 (Requested)
+      - https://www.facebook.com/groups/476946341786094 (Requested)
+      - https://www.facebook.com/groups/824444285636228 (Requested)
+      - https://www.facebook.com/groups/814364420705473 (Requested)
+      - https://www.facebook.com/groups/condoonly (Requested)
+      - https://www.facebook.com/groups/1882723421791849 (Requested)
+      - https://www.facebook.com/groups/159016084824276 (Requested)
+      - https://www.facebook.com/groups/1198971403601626 (Requested)
+      - https://www.facebook.com/groups/691539337669985 (Requested)
+      - https://www.facebook.com/groups/133594553855013 (Requested)
+      - https://www.facebook.com/groups/201506827113877 (Requested)
+      - https://www.facebook.com/groups/2305525572859033 (Requested)
+      - https://www.facebook.com/groups/rentalcondo.thailand (Requested)
+      - https://www.facebook.com/groups/1996508467234865 (Requested)
+      - https://www.facebook.com/groups/828001787348618 (Requested)
+      - https://www.facebook.com/groups/realestatethailand (Requested)
+      - https://www.facebook.com/groups/propertysinthailand (Requested)
+      - https://www.facebook.com/groups/ddproperty (Requested)
+      - https://www.facebook.com/groups/condomarket (Requested)
+      - https://www.facebook.com/groups/bkkrealestatenetwork (Requested)
+      - https://www.facebook.com/groups/bangkokpropertysalerent (Requested)
+      - https://www.facebook.com/groups/bangkokhomecondoforsalerent (Requested)
+      - https://www.facebook.com/groups/apartments.bangkok (Requested)
+      - https://www.facebook.com/groups/Rentpropertybangkok (Requested)
+      - https://www.facebook.com/groups/BangkokCityProperty (Requested)
+      - https://www.facebook.com/groups/994292387295145 (Requested)
+      - https://www.facebook.com/groups/971628516192793 (Requested)
+      - https://www.facebook.com/groups/951779469666920 (Requested)
+      - https://www.facebook.com/groups/933744174564385 (Requested)
+      - https://www.facebook.com/groups/899928066709755 (Requested)
+      - https://www.facebook.com/groups/855815911896417 (Requested)
+      - https://www.facebook.com/groups/846176585481612 (Requested)
+      - https://www.facebook.com/groups/815193459461027 (Requested)
+      - https://www.facebook.com/groups/773192030070938 (Requested)
+      - https://www.facebook.com/groups/766632061317895 (Requested)
+      - https://www.facebook.com/groups/740204146163639 (Requested)
+      - https://www.facebook.com/groups/734725063368017 (Requested)
+      - https://www.facebook.com/groups/691988518250398 (Requested)
+      - https://www.facebook.com/groups/685924681607433 (Requested)
+      - https://www.facebook.com/groups/662942647526513 (Requested)
+      - https://www.facebook.com/groups/638603966157611 (Requested)
+      - https://www.facebook.com/groups/6368860906522731 (Requested)
+      - https://www.facebook.com/groups/556723242092912 (Requested)
+      - https://www.facebook.com/groups/539365262901337 (Requested)
+      - https://www.facebook.com/groups/521286831216053 (Requested)
+      - https://www.facebook.com/groups/521186934570074 (Requested)
+      - https://www.facebook.com/groups/449296593208210 (Requested)
+      - https://www.facebook.com/groups/427397264361863 (Requested)
+      - https://www.facebook.com/groups/3833436873359949 (Requested)
+      - https://www.facebook.com/groups/3568165946775186 (Requested)
+      - https://www.facebook.com/groups/3557143704534567 (Requested)
+      - https://www.facebook.com/groups/351409118682733 (Requested)
+      - https://www.facebook.com/groups/336814764786114 (Requested)
+      - https://www.facebook.com/groups/2124290374373075 (Requested)
+      - https://www.facebook.com/groups/1987529144870172 (Requested)
+      - https://www.facebook.com/groups/194947800049301 (Requested)
+      - https://www.facebook.com/groups/191813887602870 (Requested)
+      - https://www.facebook.com/groups/1853548804854918 (Requested)
+      - https://www.facebook.com/groups/1815178361955991 (Requested)
+      - https://www.facebook.com/groups/1186517434840640 (Requested)
+      - https://www.facebook.com/groups/1110355756395813 (Requested)
+      - https://www.facebook.com/groups/215641146761225 (Requested)
+      - https://www.facebook.com/groups/taladnongchok (Requested)
+      - https://www.facebook.com/groups/169302908646715 (Requested)
+      - https://www.facebook.com/groups/1555289341883609 (Requested)
+      - https://www.facebook.com/groups/184067491297579 (Requested)
+      - https://www.facebook.com/groups/1012164742151734 (Requested)
+      - https://www.facebook.com/groups/461842327683291 (Requested)
+      - https://www.facebook.com/groups/1116528203018291 (Requested)
+      - https://www.facebook.com/groups/1613933658799899 (Requested)
+      - https://www.facebook.com/groups/859590771249603 (Requested)
+      - https://www.facebook.com/groups/320458522277215 (Requested)
+      - https://www.facebook.com/groups/5183046771757578 (Requested)
+      - https://www.facebook.com/groups/636664341522011 (Requested)
+      - https://www.facebook.com/groups/1548667648975275 (Requested)
+      - https://www.facebook.com/groups/2509304819380881 (Requested)
+      - https://www.facebook.com/groups/508418369501225 (Requested)
+      - https://www.facebook.com/groups/2011866895727993 (Requested)
+      - https://www.facebook.com/groups/bkkcondoexchange (Requested)
+      - https://www.facebook.com/groups/2537773629777038 (Requested)
+      - https://www.facebook.com/groups/1547652135557140 (Requested)
+      - https://www.facebook.com/groups/1538658993111023 (Requested)
+      - https://www.facebook.com/groups/2531929623686542 (Requested)
+      - https://www.facebook.com/groups/2295227217356985 (Requested)
+      - https://www.facebook.com/groups/1690630934528869 (Requested)
+      - https://www.facebook.com/groups/3313718005519700 (Requested)
+      - https://www.facebook.com/groups/1559402340986912 (Requested)
+      - https://www.facebook.com/groups/1532372403506194 (Requested)
+      - https://www.facebook.com/groups/1793532070937320 (Requested)
+      - https://www.facebook.com/groups/property2thailand (Requested)
+      - https://www.facebook.com/groups/1904094833161987 (Requested)
+      - https://www.facebook.com/groups/propertydit (Requested)
+      - https://www.facebook.com/groups/1512942549024788 (Requested)
+      - https://www.facebook.com/groups/150650505693036 (Requested)
+      - https://www.facebook.com/groups/1503588676619731 (Requested)
+      - https://www.facebook.com/groups/1488804851435421 (Requested)
+      - https://www.facebook.com/groups/1466979060382436 (Requested)
+      - https://www.facebook.com/groups/1410743336481046 (Requested)
+      - https://www.facebook.com/groups/1377341842675243 (Requested)
+      - https://www.facebook.com/groups/1109330256192921 (Requested)
+      - https://www.facebook.com/groups/1046166565393882 (Requested)
+      - https://www.facebook.com/groups/103231890267900 (Requested)
+      - https://www.facebook.com/groups/944745470251326 (Requested)
+      - https://www.facebook.com/groups/1591659951258195 (Requested)
+      - https://www.facebook.com/groups/1538460173425502 (Requested)
+      - https://www.facebook.com/groups/1348263615963511 (Requested)
+      - https://www.facebook.com/groups/apartmentandhotelthailand (Requested)
+      - https://www.facebook.com/groups/1139521147037898 (Requested)
+      - https://www.facebook.com/groups/430172273281481 (Requested)
+      - https://www.facebook.com/groups/1262655694557016 (Requested)
+      - https://www.facebook.com/groups/412391603132466 (Requested)
+      - https://www.facebook.com/groups/property.exchange.center (Requested)
+      - https://www.facebook.com/groups/1396145167522075 (Requested)
+      - https://www.facebook.com/groups/ownerpropertycenter (Requested)
+      - https://www.facebook.com/groups/1046291836187649 (Requested)
+      - https://www.facebook.com/groups/257610507978700 (Requested)
+      - https://www.facebook.com/groups/670340270367352 (Requested)
+      - https://www.facebook.com/groups/760021451208461 (Requested)
+      - https://www.facebook.com/groups/4079699138779025 (Requested)
+      - https://www.facebook.com/groups/406054590709195 (Requested)
+      - https://www.facebook.com/groups/ownerpostproperty (Requested)
+      - https://www.facebook.com/groups/622791405042949 (Requested)
+      - https://www.facebook.com/groups/238980064660836 (Requested)
+      - https://www.facebook.com/groups/696666648237738 (Requested)
+      - https://www.facebook.com/groups/697595008736207 (Requested)
+      - https://www.facebook.com/groups/BaanchaoSamutprakan (Requested)
+      - https://www.facebook.com/groups/231061334385936 (Requested)
+      - https://www.facebook.com/groups/2534892590123273 (Requested)
+      - https://www.facebook.com/groups/2710634472537150 (Requested)
+      - https://www.facebook.com/groups/568526123908449 (Requested)
+      - https://www.facebook.com/groups/2113718028874230 (Requested)
+      - https://www.facebook.com/groups/1005076619912156 (Requested)
+      - https://www.facebook.com/groups/228301002893473 (Requested)
+      - https://www.facebook.com/groups/3752750788138733 (Requested)
+      - https://www.facebook.com/groups/1714618202011290 (Requested)
+      - https://www.facebook.com/groups/1150111862919687 (Requested)
+      - https://www.facebook.com/groups/1263597684611510 (Requested)
+      - https://www.facebook.com/groups/homecondo (Requested)
+      - https://www.facebook.com/groups/290498781408639 (Requested)
+      - https://www.facebook.com/groups/375114833819376 (Requested)
+      - https://www.facebook.com/groups/2826308884330946 (Requested)
+      - https://www.facebook.com/groups/499010567523787 (Requested)
+      - https://www.facebook.com/groups/656901257818294 (Requested)
+      - https://www.facebook.com/groups/1229905360517881 (Requested)
+      - https://www.facebook.com/groups/2064854547122015 (Requested)
+      - https://www.facebook.com/groups/1909551669287104 (Requested)
+      - https://www.facebook.com/groups/3721470634593662 (Requested)
+      - https://www.facebook.com/groups/1672821179658958 (Requested)
+      - https://www.facebook.com/groups/849933970190019 (Requested)
+      - https://www.facebook.com/groups/1030824198180093 (Requested)
+      - https://www.facebook.com/groups/1170571840142288 (Requested)
+      - https://www.facebook.com/groups/654140645802800 (Requested)
+      - https://www.facebook.com/groups/988352639198652 (Requested)
+      - https://www.facebook.com/groups/485019775925280 (Requested)
+      - https://www.facebook.com/groups/samutprakarnhouse (Requested)
+      - https://www.facebook.com/groups/1850554671924997 (Requested)
+      - https://www.facebook.com/groups/2234744070053568 (Requested)
+      - https://www.facebook.com/groups/1499074927060101 (Requested)
+      - https://www.facebook.com/groups/604903050603754 (Requested)
+      - https://www.facebook.com/groups/475792960562818 (Requested)
+      - https://www.facebook.com/groups/461645575287888 (Requested)
+      - https://www.facebook.com/groups/3172325979668540 (Requested)
+      - https://www.facebook.com/groups/1126839974462095 (Requested)
+      - https://www.facebook.com/groups/338669103755058 (Requested)
+      - https://www.facebook.com/groups/427111148772440 (Requested)
+      - https://www.facebook.com/groups/916608056439531 (Requested)
+      - https://www.facebook.com/groups/3631524940451238 (Requested)
+      - https://www.facebook.com/groups/480654821050794 (Requested)
+      - https://www.facebook.com/groups/528024112872396 (Requested)
+      - https://www.facebook.com/groups/1340825190047862 (Requested)
+      - https://www.facebook.com/groups/163148055517351 (Requested)
+      - https://www.facebook.com/groups/132680787502720 (Requested)
+      - https://www.facebook.com/groups/690618905452659 (Requested)
+      - https://www.facebook.com/groups/1087684258591140 (Requested)
+      - https://www.facebook.com/groups/389993647364568 (Requested)
+      - https://www.facebook.com/groups/536705354589690 (Requested)
+      - https://www.facebook.com/groups/1345220926256266 (Requested)
+      - https://www.facebook.com/groups/914277069917114 (Requested)
+      - https://www.facebook.com/groups/1965252317136254 (Requested)
+      - https://www.facebook.com/groups/2157264477895406 (Requested)
+      - https://www.facebook.com/groups/493801904328548 (Requested)
+      - https://www.facebook.com/groups/bkkestate (Requested)
+      - https://www.facebook.com/groups/2375208805830473 (Requested)
+      - https://www.facebook.com/groups/prakard (Requested)
+      - https://www.facebook.com/groups/1614893802095229 (Requested)
+      - https://www.facebook.com/groups/877253834116553 (Requested)
+      - https://www.facebook.com/groups/560756492884225 (Requested)
+      - https://www.facebook.com/groups/937956887763282 (Requested)
+      - https://www.facebook.com/groups/748801740197253 (Requested)
+      - https://www.facebook.com/groups/baanchaohatairat (Requested)
+      - https://www.facebook.com/groups/3788727341411702 (Requested)
+      - https://www.facebook.com/groups/200247158314239 (Requested)
+      - https://www.facebook.com/groups/418849120018319 (Requested)
+      - https://www.facebook.com/groups/ladprao (Requested)
+      - https://www.facebook.com/groups/1678826688975625 (Requested)
+      - https://www.facebook.com/groups/983352002868530 (Requested)
+      - https://www.facebook.com/groups/414569753074524 (Requested)
+      - https://www.facebook.com/groups/252924793763219 (Requested)
+      - https://www.facebook.com/groups/555398119959312 (Requested)
+      - https://www.facebook.com/groups/1838517169922397 (Requested)
+      - https://www.facebook.com/groups/191850288109701 (Requested)
+      - https://www.facebook.com/groups/rakdonmuang (Requested)
+      - https://www.facebook.com/groups/1187447758712279 (Requested)
+      - https://www.facebook.com/groups/191601265429473 (Requested)
+      - https://www.facebook.com/groups/627647564348927 (Requested)
+      - https://www.facebook.com/groups/356486631538598 (Requested)
+      - https://www.facebook.com/groups/hahorkmitl (Requested)
+      - https://www.facebook.com/groups/461117364284694 (Requested)
+      - https://www.facebook.com/groups/1686285534774199 (Requested)
+      - https://www.facebook.com/groups/1629261964011774 (Requested)
+      - https://www.facebook.com/groups/1014448843214901 (Requested)
+      - https://www.facebook.com/groups/2414579465433120 (Requested)
+      - https://www.facebook.com/groups/997985470756918 (Requested)
+      - https://www.facebook.com/groups/SiamProperty (Requested)
+      - https://www.facebook.com/groups/1754744071471297 (Requested)
+      - https://www.facebook.com/groups/600790233814432 (Requested)
+      - https://www.facebook.com/groups/2011876292377388 (Requested)
+      - https://www.facebook.com/groups/1432583150894979 (Requested)
+      - https://www.facebook.com/groups/469882507213449 (Requested)
+      - https://www.facebook.com/groups/1103651936749621 (Requested)
+      - https://www.facebook.com/groups/312410517410028 (Requested)
+      - https://www.facebook.com/groups/captainrenovate (Requested)
+      - https://www.facebook.com/groups/3394720297519670 (Requested)
+      - https://www.facebook.com/groups/453284088809767 (Requested)
+      - https://www.facebook.com/groups/2648272705199689 (Requested)
+      - https://www.facebook.com/groups/181979329578605 (Requested)
+      - https://www.facebook.com/groups/2211473895798991 (Requested)
+      - https://www.facebook.com/groups/deverproperty (Requested)
+      - https://www.facebook.com/groups/454134418690334 (Requested)
+      - https://www.facebook.com/groups/183707662357525 (Requested)
+      - https://www.facebook.com/groups/590939995399426 (Requested)
+      - https://www.facebook.com/groups/5974758855877399 (Requested)
+      - https://www.facebook.com/groups/1104997323877023 (Requested)
+      - https://www.facebook.com/groups/360924021072344 (Requested)
+      - https://www.facebook.com/groups/183447625625227 (Requested)
+      - https://www.facebook.com/groups/973772067365917 (Requested)
+      - https://www.facebook.com/groups/775596160726360 (Requested)
+      - https://www.facebook.com/groups/759662278347282 (Requested)
+      - https://www.facebook.com/groups/696178178838339 (Requested)
+      - https://www.facebook.com/groups/1359016754946774 (Requested)
+      - https://www.facebook.com/groups/874685616710008 (Requested)
+      - https://www.facebook.com/groups/614164007130958 (Requested)
+      - https://www.facebook.com/groups/2293944470726954 (Requested)
+      - https://www.facebook.com/groups/797950729046357 (Requested)
+      - https://www.facebook.com/groups/4129965770566082 (Requested)
+      - https://www.facebook.com/groups/victorymonument (Requested)
+      - https://www.facebook.com/groups/211520586207563 (Requested)
+      - https://www.facebook.com/groups/1377619222288718 (Requested)
+      - https://www.facebook.com/groups/268382030829152 (Requested)
+      - https://www.facebook.com/groups/teedinsiam (Requested)
+      - https://www.facebook.com/groups/3158134734459128 (Requested)
+      - https://www.facebook.com/groups/1788386674734122 (Requested)
+      - https://www.facebook.com/groups/BaanSweetHome (Requested)
+      - https://www.facebook.com/groups/973856189816766 (Requested)
+      - https://www.facebook.com/groups/housescondobangkhae (Requested)
+      - https://www.facebook.com/groups/1084717058362313 (Requested)
+      - https://www.facebook.com/groups/325491017609177 (Requested)
+      - https://www.facebook.com/groups/189975044968479 (Requested)
+      - https://www.facebook.com/groups/4995208047220385 (Requested)
+      - https://www.facebook.com/groups/858314684333611 (Requested)
+      - https://www.facebook.com/groups/1260774814082489 (Requested)
+      - https://www.facebook.com/groups/1986622261663799 (Requested)
+      - https://www.facebook.com/groups/317668643714834 (Requested)
+      - https://www.facebook.com/groups/349519210778267 (Requested)
+      - https://www.facebook.com/groups/hongdee (Requested)
+      - https://www.facebook.com/groups/359803497115092 (Requested)
+      - https://www.facebook.com/groups/condothonburideeperty (Requested)
+      - https://www.facebook.com/groups/2196129343911797 (Requested)
+      - https://www.facebook.com/groups/474095045035690 (Requested)
+      - https://www.facebook.com/groups/3765008063548871 (Requested)
+      - https://www.facebook.com/groups/388594476619201 (Requested)
+      - https://www.facebook.com/groups/1500567277373568 (Requested)
+      - https://www.facebook.com/groups/1220390754677911 (Requested)
+      - https://www.facebook.com/groups/175356699802854 (Requested)
+      - https://www.facebook.com/groups/498649870925931 (Requested)
+      - https://www.facebook.com/groups/2277438709138306 (Requested)
+      - https://www.facebook.com/groups/770357389784713 (Requested)
+      - https://www.facebook.com/groups/1312220082791878 (Requested)
+      - https://www.facebook.com/groups/407106743388516 (Requested)
+      - https://www.facebook.com/groups/anycondo (Requested)
+      - https://www.facebook.com/groups/condo24.7hours (Requested)
+      - https://www.facebook.com/groups/1609388822886962 (Requested)
+      - https://www.facebook.com/groups/BaanchaokrungthepPost (Requested)
+      - https://www.facebook.com/groups/realestatezonesukhumvit (Requested)
+      - https://www.facebook.com/groups/1108531659756743 (Requested)
+      - https://www.facebook.com/groups/1452723328280933 (Requested)
+      - https://www.facebook.com/groups/808407419779991 (Requested)
+      - https://www.facebook.com/groups/1106662582772063 (Requested)
+      - https://www.facebook.com/groups/258466466017338 (Requested)
+      - https://www.facebook.com/groups/1092573465375306 (Requested)
+      - https://www.facebook.com/groups/417264742311822 (Requested)
+  [?] อื่นๆ (179):
+      - https://www.facebook.com/groups/506820490090145
+      - https://www.facebook.com/groups/479284357132985
+      - https://www.facebook.com/groups/renthubladprao
+      - https://www.facebook.com/groups/2292441674198397
+      - https://www.facebook.com/groups/2767757283508308
+      - https://www.facebook.com/groups/renthubthonburi
+      - https://www.facebook.com/groups/bangkokcondo.zone1
+      - https://www.facebook.com/groups/1374557344264622
+      - https://www.facebook.com/groups/376529517061934
+      - https://www.facebook.com/groups/noomod
+      - https://www.facebook.com/groups/5672556302856531
+      - https://www.facebook.com/groups/316388711166058
+      - https://www.facebook.com/groups/781531866796539
+      - https://www.facebook.com/groups/793764428021207
+      - https://www.facebook.com/groups/168772531869679
+      - https://www.facebook.com/groups/808178129661066
+      - https://www.facebook.com/groups/5707824885928342
+      - https://www.facebook.com/groups/doomyhome
+      - https://www.facebook.com/groups/1519133225407119
+      - https://www.facebook.com/groups/1642400276605338
+      - https://www.facebook.com/groups/425851519745272
+      - https://www.facebook.com/groups/2152489331835284
+      - https://www.facebook.com/groups/8079053665507260
+      - https://www.facebook.com/groups/474061510261655
+      - https://www.facebook.com/groups/2495079154063439
+      - https://www.facebook.com/groups/710902491025374
+      - https://www.facebook.com/groups/117841215586587
+      - https://www.facebook.com/groups/1081437966633070
+      - https://www.facebook.com/groups/408297318030383
+      - https://www.facebook.com/groups/325509188062130
+      - https://www.facebook.com/groups/280917563210989
+      - https://www.facebook.com/groups/193354102441221
+      - https://www.facebook.com/groups/1598408810399338
+      - https://www.facebook.com/groups/25472044299108058
+      - https://www.facebook.com/groups/bangkokcondo.zone2
+      - https://www.facebook.com/groups/673260117064316
+      - https://www.facebook.com/groups/condomuangthong
+      - https://www.facebook.com/groups/154204006788652
+      - https://www.facebook.com/groups/511305297866022
+      - https://www.facebook.com/groups/684141950616417
+      - https://www.facebook.com/groups/1041678552942187
+      - https://www.facebook.com/groups/841959233498782
+      - https://www.facebook.com/groups/445813965059145
+      - https://www.facebook.com/groups/nongchoklandBKK
+      - https://www.facebook.com/groups/272878515741175
+      - https://www.facebook.com/groups/2335394879925112
+      - https://www.facebook.com/groups/1772115576286102
+      - https://www.facebook.com/groups/1650079982104431
+      - https://www.facebook.com/groups/418979141064335
+      - https://www.facebook.com/groups/1121149845687694
+      - https://www.facebook.com/groups/704868349948126
+      - https://www.facebook.com/groups/2987096421431457
+      - https://www.facebook.com/groups/1691583960990954
+      - https://www.facebook.com/groups/2778039292317084
+      - https://www.facebook.com/groups/861188809496616
+      - https://www.facebook.com/groups/1713226989447678
+      - https://www.facebook.com/groups/625412283342175
+      - https://www.facebook.com/groups/9309942985759106
+      - https://www.facebook.com/groups/362654672792945
+      - https://www.facebook.com/groups/1687576608230772
+      - https://www.facebook.com/groups/350532830875252
+      - https://www.facebook.com/groups/388810322769763
+      - https://www.facebook.com/groups/996985738644661
+      - https://www.facebook.com/groups/485807592679775
+      - https://www.facebook.com/groups/551438499187373
+      - https://www.facebook.com/groups/1016064993210612
+      - https://www.facebook.com/groups/549980996867704
+      - https://www.facebook.com/groups/320957176629898
+      - https://www.facebook.com/groups/easyrentcondo
+      - https://www.facebook.com/groups/2884768588494517
+      - https://www.facebook.com/groups/459824015392459
+      - https://www.facebook.com/groups/1826924671127915
+      - https://www.facebook.com/groups/2204198249716932
+      - https://www.facebook.com/groups/890182880619111
+      - https://www.facebook.com/groups/1885651265229283
+      - https://www.facebook.com/groups/918963065693294
+      - https://www.facebook.com/groups/3116282025301123
+      - https://www.facebook.com/groups/271328640590238
+      - https://www.facebook.com/groups/723902546454061
+      - https://www.facebook.com/groups/sathornsilomchidlomrama3
+      - https://www.facebook.com/groups/495983808134559
+      - https://www.facebook.com/groups/4724114287608132
+      - https://www.facebook.com/groups/248618711455960
+      - https://www.facebook.com/groups/220569699849440
+      - https://www.facebook.com/groups/589558773743662
+      - https://www.facebook.com/groups/476999805696703
+      - https://www.facebook.com/groups/1553575081846702
+      - https://www.facebook.com/groups/815295753611722
+      - https://www.facebook.com/groups/735825722647082
+      - https://www.facebook.com/groups/1186937451819749
+      - https://www.facebook.com/groups/600409106783291
+      - https://www.facebook.com/groups/329992692790103
+      - https://www.facebook.com/groups/1307163000613371
+      - https://www.facebook.com/groups/1163260918783533
+      - https://www.facebook.com/groups/606170270272930
+      - https://www.facebook.com/groups/153209160316565
+      - https://www.facebook.com/groups/5963899920290728
+      - https://www.facebook.com/groups/164545157581386
+      - https://www.facebook.com/groups/bangkokcondorealestateagent
+      - https://www.facebook.com/groups/764362294733798
+      - https://www.facebook.com/groups/173230473376662
+      - https://www.facebook.com/groups/880862373344078
+      - https://www.facebook.com/groups/condosilomline
+      - https://www.facebook.com/groups/388680924027961
+      - https://www.facebook.com/groups/1588319338366856
+      - https://www.facebook.com/groups/1507679532724741
+      - https://www.facebook.com/groups/1258789047841995
+      - https://www.facebook.com/groups/320475587146673
+      - https://www.facebook.com/groups/condo.dd
+      - https://www.facebook.com/groups/462178087311398
+      - https://www.facebook.com/groups/1369465206534724
+      - https://www.facebook.com/groups/2046245172358040
+      - https://www.facebook.com/groups/1933037536983493
+      - https://www.facebook.com/groups/774629652726107
+      - https://www.facebook.com/groups/412572351065042
+      - https://www.facebook.com/groups/611183903869589
+      - https://www.facebook.com/groups/1636126916415833
+      - https://www.facebook.com/groups/2142662289316227
+      - https://www.facebook.com/groups/698983625361751
+      - https://www.facebook.com/groups/2136347836651953
+      - https://www.facebook.com/groups/578803879196751
+      - https://www.facebook.com/groups/562118300876829
+      - https://www.facebook.com/groups/462968459352152
+      - https://www.facebook.com/groups/197875780952405
+      - https://www.facebook.com/groups/917936558355605
+      - https://www.facebook.com/groups/654036531432530
+      - https://www.facebook.com/groups/583975039527691
+      - https://www.facebook.com/groups/4337916876218557
+      - https://www.facebook.com/groups/834855407272143
+      - https://www.facebook.com/groups/baanchaoonnutzone
+      - https://www.facebook.com/groups/661207761960248
+      - https://www.facebook.com/groups/luxuryhome.co.th
+      - https://www.facebook.com/groups/412386176763802
+      - https://www.facebook.com/groups/1606147969692365
+      - https://www.facebook.com/groups/235562861511614
+      - https://www.facebook.com/groups/renthub
+      - https://www.facebook.com/groups/178458571165753
+      - https://www.facebook.com/groups/854552138588498
+      - https://www.facebook.com/groups/1286913692068792
+      - https://www.facebook.com/groups/286189783809014
+      - https://www.facebook.com/groups/2159284734347274
+      - https://www.facebook.com/groups/6521519787867197
+      - https://www.facebook.com/groups/Bangkokcondoforsaleandrent
+      - https://www.facebook.com/groups/baanchaoramintrazone
+      - https://www.facebook.com/groups/1403629187690575
+      - https://www.facebook.com/groups/361296048658292
+      - https://www.facebook.com/groups/1005516184475934
+      - https://www.facebook.com/groups/1040390310738389
+      - https://www.facebook.com/groups/892225848304146
+      - https://www.facebook.com/groups/1567453806859011
+      - https://www.facebook.com/groups/1707556586139562
+      - https://www.facebook.com/groups/939982166022889
+      - https://www.facebook.com/groups/2141882662764758
+      - https://www.facebook.com/groups/356092439159549
+      - https://www.facebook.com/groups/2875828049396890
+      - https://www.facebook.com/groups/700418963409120
+      - https://www.facebook.com/groups/191052788953745
+      - https://www.facebook.com/groups/423361974778083
+      - https://www.facebook.com/groups/btscondo
+      - https://www.facebook.com/groups/3710913192351235
+      - https://www.facebook.com/groups/634630422215811
+      - https://www.facebook.com/groups/siambaanchao
+      - https://www.facebook.com/groups/104182426977811
+      - https://www.facebook.com/groups/1051742858319923
+      - https://www.facebook.com/groups/760802348204680
+      - https://www.facebook.com/groups/465883490928070
+      - https://www.facebook.com/groups/2002925073391227
+      - https://www.facebook.com/groups/3379794085636851
+      - https://www.facebook.com/groups/296382808693667
+      - https://www.facebook.com/groups/1231854997282175
+      - https://www.facebook.com/groups/3397058930622540
+      - https://www.facebook.com/groups/BaanchaoThonburi
+      - https://www.facebook.com/groups/787367454755022
+      - https://www.facebook.com/groups/1508927629253734
+      - https://www.facebook.com/groups/2116119028696464
+      - https://www.facebook.com/groups/1192438088817466
+      - https://www.facebook.com/groups/1057164620966765
+      - https://www.facebook.com/groups/condo.th
+      - https://www.facebook.com/groups/whoknoes
+

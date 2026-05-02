@@ -2,9 +2,9 @@ import os
 import shutil
 
 # Configuration
-BASE_PATH = "/Users/pattharawadee/Desktop/Facebook_Property_Data"
-LINKS_FILE = "/Users/pattharawadee/Desktop/untitled folder/uat_links.txt"
-RERUN_FILE = "/Users/pattharawadee/Desktop/untitled folder/rerun_links.txt"
+BASE_PATH = "/Users/your_username/Desktop/Facebook_Property_Data"
+LINKS_FILE = "/Users/your_username/Desktop/untitled folder/uat_links.txt"
+RERUN_FILE = "/Users/your_username/Desktop/untitled folder/rerun_links.txt"
 
 def safe_cleanup():
     print("--- [1/5 Search] กำลังตรวจสอบโฟลเดอร์รูปภาพที่มีปัญหา... ---")

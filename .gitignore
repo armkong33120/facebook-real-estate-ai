@@ -1,5 +1,7 @@
 .DS_Store
 fb_bot_profile/
+.env
+config_override.py
 ฐานข้อมูลอสังหา_Facebook/
 node_modules/
 config.json
@@ -12,7 +14,6 @@ build/
 Facebook_Property_Data/
 temp_*/
 ghost_history.log
-Facebook_Property_Data/
 
 one_shot_vision.png
 vision_map.png
@@ -23,3 +24,14 @@ monitor_run_save_*/
 test_gallery/
 test_post_capture.png
 fb_check.png
+
+# Extra files to ignore
+*.png
+*.xml
+*.csv
+scratch/
+.vscode/
+__pycache__/
+screenshots/
+.gemini/
+.env

@@ -1,7 +1,7 @@
 import os
 
 links_file = "rerun_links.txt"
-base_path = "/Users/pattharawadee/Desktop/Facebook_Property_Data"
+base_path = "/Users/your_username/Desktop/Facebook_Property_Data"
 
 if not os.path.exists(links_file):
     print(f"Error: {links_file} not found")
